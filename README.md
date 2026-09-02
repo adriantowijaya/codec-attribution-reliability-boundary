@@ -46,14 +46,16 @@ The frozen environment anchors are documented in `environment/`, including Pytho
 Checksums are under `manifests/checksums.sha256`. Author, DOI, final repository URL, ORCID, affiliation, and license fields are pending human confirmation. No placeholder DOI is asserted here.
 
 
-## Private Staging Status
+## Public Reproducibility Release
 
-Status: PRIVATE REPRODUCIBILITY STAGING; NOT YET AN ARCHIVAL RELEASE.
+Status: PUBLIC REPRODUCIBILITY RELEASE.
 
-Private staging version: 0.1.2.
+Version: 1.0.0.
 
-Future planned public archival release: 1.0.0.
+Zenodo archival publication: PENDING.
 
 Repository URL: https://github.com/adriantowijaya/codec-attribution-reliability-boundary
 
 Source code is licensed under BSD-3-Clause. Project-generated numerical evidence and documentation are licensed under CC-BY-4.0. Third-party materials are not redistributed and are not re-licensed.
+
+Production DOI: [PRODUCTION DOI TO BE INSERTED AFTER PUBLICATION]

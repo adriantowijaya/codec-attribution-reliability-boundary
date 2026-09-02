@@ -10,7 +10,7 @@ REPORT_DIR = ROOT / "verification"
 TOL = 1e-12
 
 REQUIRED_DIRS = ["metadata", "docs", "environment", "config", "manifests", "src", "scripts", "frozen_outputs", "tests"]
-REQUIRED_FILES = ["README.md", "CHANGELOG.md", "AUTHORS.md", "LICENSE", "DATA_LICENSE.md", "CITATION.cff", ".zenodo.json", "metadata/HUMAN_METADATA_GATE.md", "docs/CLAIM_BOUNDARY.md", "docs/THIRD_PARTY_DATA.md", "config/expected_results.json", "manifests/checksums.sha256"]
+REQUIRED_FILES = ["README.md", "CHANGELOG.md", "AUTHORS.md", "LICENSE", "DATA_LICENSE.md", "CITATION.cff", "metadata/HUMAN_METADATA_GATE.md", "docs/CLAIM_BOUNDARY.md", "docs/THIRD_PARTY_DATA.md", "config/expected_results.json", "manifests/checksums.sha256"]
 SECRET_PATTERNS = ["github" + "_pat_", "g" + "hp_", "ZENODO" + "_TOKEN", "ZENODO" + "_SANDBOX_TOKEN", "api" + "_key", "pass" + "word", "PRIVATE" + " KEY", "C:" + "\\Users\\", "C:" + "\\Workspace\\"]
 
 def sha256_file(path):
@@ -111,7 +111,7 @@ def main():
         add(checks, "directory " + d, (ROOT / d).is_dir())
     for f in REQUIRED_FILES:
         add(checks, "file " + f, (ROOT / f).is_file())
-    for f in ["AUTHORS_PENDING.md", "LICENSE_DECISION_REQUIRED.md", "metadata/CITATION.cff.template", "metadata/zenodo_metadata.template.json"]:
+    for f in ["AUTHORS_PENDING.md", "LICENSE_DECISION_REQUIRED.md", ".zenodo.json", "metadata/CITATION.cff.template", "metadata/zenodo_metadata.template.json"]:
         add(checks, "placeholder absent " + f, not (ROOT / f).exists(), kind="METADATA_RELEASE_CONTRACT")
     raw_ext = {".wav", ".flac", ".mp3", ".m4a", ".aac", ".opus", ".ogg"}
     add(checks, "no unexpected raw-audio payload", len([p for p in ROOT.rglob("*") if p.is_file() and p.suffix.lower() in raw_ext]) == 0)

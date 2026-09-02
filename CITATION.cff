@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite it using the metadata below."
 type: software
 title: "Reproducibility Package for Configuration-Conditioned Reliability Boundaries in Blind Audio Codec-Family Attribution"
-version: "0.1.2"
+version: "1.0.0"
 license: "BSD-3-Clause"
 repository-code: "https://github.com/adriantowijaya/codec-attribution-reliability-boundary"
 authors:
