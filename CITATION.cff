@@ -3,6 +3,8 @@ message: "If you use this reproducibility package, please cite it using the meta
 type: software
 title: "Reproducibility Package for Configuration-Conditioned Reliability Boundaries in Blind Audio Codec-Family Attribution"
 version: "1.0.0"
+doi: "10.5281/zenodo.22252900"
+date-released: "2026-09-02"
 license: "BSD-3-Clause"
 repository-code: "https://github.com/adriantowijaya/codec-attribution-reliability-boundary"
 authors:

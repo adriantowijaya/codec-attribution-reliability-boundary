@@ -59,3 +59,14 @@ Repository URL: https://github.com/adriantowijaya/codec-attribution-reliability-
 Source code is licensed under BSD-3-Clause. Project-generated numerical evidence and documentation are licensed under CC-BY-4.0. Third-party materials are not redistributed and are not re-licensed.
 
 Production DOI: [PRODUCTION DOI TO BE INSERTED AFTER PUBLICATION]
+
+
+## Archival Release
+
+Version: v1.0.0.
+
+Zenodo DOI: 10.5281/zenodo.22252900
+
+Link: https://doi.org/10.5281/zenodo.22252900
+
+The Zenodo archive is the immutable archival snapshot associated with GitHub tag v1.0.0.
