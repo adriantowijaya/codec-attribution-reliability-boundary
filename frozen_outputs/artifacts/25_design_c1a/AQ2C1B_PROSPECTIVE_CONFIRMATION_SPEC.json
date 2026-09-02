@@ -1,0 +1,94 @@
+{
+  "research_question": "Does configuration-conditioned empirical identifiability of blind audio codec-family provenance independently recur on untouched confirmation parents under a frozen B1 probe?",
+  "primary_confirmation_family": "AAC",
+  "codec_set": [
+    "AAC",
+    "MP3",
+    "Opus"
+  ],
+  "confirmation_parent_count": 60,
+  "parents_per_corpus": 20,
+  "confirmation_parent_manifest_sha256": "8f5cace862a0066e7bc6c47e23816206dc9069d8841234186c20a747868e69d8",
+  "rate_grid": [
+    32,
+    48,
+    64,
+    80,
+    96,
+    128
+  ],
+  "rate_roles": {
+    "32": "SEEN_ENDPOINT_CONTROL_LOW",
+    "48": "NEW_UNSEEN_PROBE_1",
+    "64": "DISCOVERY_RATE_REPLICATION",
+    "80": "NEW_UNSEEN_PROBE_2",
+    "96": "NEW_UNSEEN_PROBE_3",
+    "128": "SEEN_ENDPOINT_CONTROL_HIGH"
+  },
+  "new_probe_rates": [
+    48,
+    80,
+    96
+  ],
+  "discovery_replication_rate": 64,
+  "seen_endpoint_rates": [
+    32,
+    128
+  ],
+  "frozen_model_numeric_sha256": "7850e14a7231ac5d2d06a72c6c2eb487cedd7df32cf5750bf62ddda79932b5de",
+  "frozen_model_config_sha256": "495b976b5fe558faee6a374707e5629c04a8d8b844f5aea9d178259db5d1fdff",
+  "frozen_feature_spec_sha256": "83020402082b7168d88df8d1eb02fc4f254d24b6fbd4ab0770403d1f96c1acae",
+  "frozen_feature_extractor_sha256": "6c79cbc06c67c9cff140cd64de6f878ea59f1b1580bb7db0b0acb08a4a57da8f",
+  "expected_C1B_derivative_count": 1080,
+  "endpoint_control_gate": {
+    "BA_ENDPOINT_POOLED_min": 0.75,
+    "AAC_RECALL_32_min": 0.6,
+    "AAC_RECALL_128_min": 0.6,
+    "domain_shift_confounded_if_BA_ENDPOINT_POOLED_lt": 0.65,
+    "domain_shift_confounded_if_both_AAC_endpoint_recalls_lt": 0.5
+  },
+  "new_rate_boundary_criterion": {
+    "rates": [
+      48,
+      80,
+      96
+    ],
+    "AAC_RECALL_r_max": 0.5,
+    "AAC_RECALL_DROP_r_min": 0.25,
+    "AAC_MEDIAN_TRUE_MARGIN_r_lt": 0,
+    "AAC_WRONG_CENTROID_FRACTION_r_min": 0.6,
+    "AAC_DOMINANT_ERROR_SHARE_r_min": 0.6
+  },
+  "paired_parent_bootstrap_contract": {
+    "independent_unit": "parent",
+    "replicates": 10000,
+    "seed_formula": "20260901 + nominal_rate",
+    "stable_degradation_requires_lower_95_percentile_gt": 0
+  },
+  "multi_corpus_consistency_contract": {
+    "corpora": [
+      "Orchset",
+      "IRMAS",
+      "FSDnoisy18k"
+    ],
+    "required_true_corpora_of_3": 2,
+    "criterion": "AAC recall at probe rate lower than 0.5*(AAC recall_32 + AAC recall_128) within corpus"
+  },
+  "discovery_rate_replication_criterion": {
+    "rate": 64,
+    "AAC_RECALL_64_max": 0.5,
+    "AAC_RECALL_DROP_64_min": 0.25,
+    "AAC_MEDIAN_TRUE_MARGIN_64_lt": 0,
+    "AAC_WRONG_CENTROID_FRACTION_64_min": 0.6,
+    "paired_drop_bootstrap_lower_95_bound_gt": 0
+  },
+  "future_C1B_classification_contract": [
+    "PASS_NEW_RATE_BOUNDARY_CONFIRMED",
+    "PASS_DISCOVERY_RATE_REPLICATION_ONLY",
+    "NO_BOUNDARY_REPLICATION",
+    "DOMAIN_SHIFT_CONFOUNDED",
+    "INCONCLUSIVE_CONFIRMATION",
+    "FAIL_INTEGRITY"
+  ],
+  "CONFIRMATION PREDICTIONS OBSERVED BEFORE SPEC FREEZE": "NO"
+}

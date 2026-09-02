@@ -1,0 +1,50 @@
+{
+  "scaler": {
+    "type": "StandardScaler",
+    "with_mean": true,
+    "with_std": true,
+    "fit_scope": "TRAIN_ONLY"
+  },
+  "model": {
+    "type": "LogisticRegression",
+    "penalty": "l2",
+    "C": 1.0,
+    "solver": "lbfgs",
+    "multi_class": "multinomial",
+    "fit_intercept": true,
+    "class_weight": null,
+    "max_iter": 5000,
+    "tol": 1e-08
+  },
+  "class_order": [
+    "AAC",
+    "MP3",
+    "Opus"
+  ],
+  "packages": {
+    "python": "3.12.3 | packaged by conda-forge | (main, Apr 15 2024, 18:20:11) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "pandas": "2.2.2",
+    "sklearn": "1.5.1"
+  },
+  "n_iter": [
+    234
+  ],
+  "classes_": [
+    "AAC",
+    "MP3",
+    "Opus"
+  ],
+  "coef_shape": [
+    3,
+    256
+  ],
+  "intercept_shape": [
+    3
+  ],
+  "training_row_count": 294,
+  "feature_dimension": 256,
+  "zero_variance_train_feature_count": 0,
+  "convergence_warning": ""
+}

@@ -1,0 +1,5 @@
+study_role,parent_count,corpus_or_domain,codec_families,rates_kbps,representation,classifier,training_scope,evaluation_role,formal_classification
+Discovery,82,"Orchset, IRMAS, FSDnoisy18k",AAC; MP3; Opus,32;64;128,STFT_LOGPOWER_STATS_V1,multinomial LogisticRegression,discovery train only,discovery/falsification,STOP_MFEA1_TRACE_NOT_SUPPORTED
+Prospective confirmation,60,"20 each Orchset, IRMAS, FSDnoisy18k",AAC; MP3; Opus,32;48;64;80;96;128,STFT_LOGPOWER_STATS_V1,frozen primary LogisticRegression,no confirmation training,primary confirmatory,PASS_NEW_RATE_BOUNDARY_CONFIRMED
+Representation/probe generality challenge,60,music triangulation cohort,AAC; MP3; Opus,32;48;64;80;96;128,LOGSPECTRAL_TEMPORAL_MODULATION_V1,RidgeClassifier,discovery train only,generality challenge,TRIANGULATION_PROBE_INADEQUATE
+External-domain stress test,40,LibriSpeech test-clean,AAC; MP3; Opus,32;80;96;128,primary A; A+RF; MFCC,LR/RF/LR arms,speech not used for training,external-domain boundary,BREADTH_PROBES_INADEQUATE

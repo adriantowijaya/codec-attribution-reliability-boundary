@@ -1,0 +1,99 @@
+{
+  "phase": "AQ-2B.1",
+  "created_utc": "2026-08-30T14:41:05.437262+00:00",
+  "AQ2B0_freeze_sha256": "e4d714e3902ece12f27caedf7e502a105e9a08066b97d73d755ba69f419d96ab",
+  "feature_spec_sha256": "83020402082b7168d88df8d1eb02fc4f254d24b6fbd4ab0770403d1f96c1acae",
+  "feature_extractor_sha256": "6c79cbc06c67c9cff140cd64de6f878ea59f1b1580bb7db0b0acb08a4a57da8f",
+  "derivative_manifest_sha256": "6f32143b4e0267e3f2acdf91404954a9ddb1e2ad5c5d5bf6cb99651dc9e021aa",
+  "feature_manifest_sha256": "e6e9983484bea4d44756a7b9b71bbea85a687fbd07892cdd42ff9fcbbec74754",
+  "train_parent_count": 49,
+  "validation_parent_count": 16,
+  "test_parent_count": 17,
+  "train_row_count": 294,
+  "validation_row_count": 96,
+  "model_config": {
+    "scaler": {
+      "type": "StandardScaler",
+      "with_mean": true,
+      "with_std": true,
+      "fit_scope": "TRAIN_ONLY"
+    },
+    "model": {
+      "type": "LogisticRegression",
+      "penalty": "l2",
+      "C": 1.0,
+      "solver": "lbfgs",
+      "multi_class": "multinomial",
+      "fit_intercept": true,
+      "class_weight": null,
+      "max_iter": 5000,
+      "tol": 1e-08
+    },
+    "class_order": [
+      "AAC",
+      "MP3",
+      "Opus"
+    ],
+    "packages": {
+      "python": "3.12.3 | packaged by conda-forge | (main, Apr 15 2024, 18:20:11) [MSC v.1938 64 bit (AMD64)]",
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "pandas": "2.2.2",
+      "sklearn": "1.5.1"
+    },
+    "n_iter": [
+      234
+    ],
+    "classes_": [
+      "AAC",
+      "MP3",
+      "Opus"
+    ],
+    "coef_shape": [
+      3,
+      256
+    ],
+    "intercept_shape": [
+      3
+    ],
+    "training_row_count": 294,
+    "feature_dimension": 256,
+    "zero_variance_train_feature_count": 0,
+    "convergence_warning": ""
+  },
+  "model_numeric_sha256": "7850e14a7231ac5d2d06a72c6c2eb487cedd7df32cf5750bf62ddda79932b5de",
+  "model_config_sha256": "495b976b5fe558faee6a374707e5629c04a8d8b844f5aea9d178259db5d1fdff",
+  "validation_metrics": {
+    "balanced_accuracy": 0.9270833333333334,
+    "macro_f1": 0.9275615588115588,
+    "accuracy": 0.9270833333333334,
+    "per_class_recall": {
+      "AAC": 0.96875,
+      "MP3": 0.90625,
+      "Opus": 0.90625
+    },
+    "confusion_matrix": [
+      [
+        31,
+        1,
+        0
+      ],
+      [
+        0,
+        29,
+        3
+      ],
+      [
+        0,
+        3,
+        29
+      ]
+    ],
+    "class_order": [
+      "AAC",
+      "MP3",
+      "Opus"
+    ]
+  },
+  "test_evaluated": "NO"
+}

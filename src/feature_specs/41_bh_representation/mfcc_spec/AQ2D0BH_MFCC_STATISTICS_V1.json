@@ -1,0 +1,25 @@
+{
+  "dct": {
+    "coefficients_retained": 20,
+    "norm": "ortho",
+    "type": "II"
+  },
+  "dimension": 40,
+  "fmax": 24000,
+  "fmin": 0,
+  "frame_count": 198,
+  "frame_length": 1200,
+  "hann_sha256": "5e6af3b7f01ed9a62461f8db643fbd0cedeb234e64df25708b50285c642bf4c2",
+  "hop_length": 480,
+  "mel_filterbank_sha256": "f69f5477b9301b6dffae285d89cfcbdc39d80c91d1c371079cd0f0de4aade579",
+  "mel_formula": "2595*log10(1+f/700)",
+  "n_fft": 2048,
+  "n_mels": 40,
+  "representation_id": "MFCC_STATISTICS_V1",
+  "sample_count": 96000,
+  "sample_rate": 48000,
+  "statistics": [
+    "temporal_mean",
+    "temporal_std_ddof0"
+  ]
+}

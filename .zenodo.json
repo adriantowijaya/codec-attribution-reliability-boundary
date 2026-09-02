@@ -1,0 +1,29 @@
+{
+  "creators": [
+    {
+      "affiliation": "Universitas Amikom Yogyakarta, Faculty of Computer Science, Doctoral Program of Informatics",
+      "name": "Hidayat, Tonny",
+      "orcid": "0000-0003-3406-0880"
+    },
+    {
+      "affiliation": "Department of Interactive Media, Faculty of Information and Communication Technology, Universiti Teknikal Malaysia Melaka",
+      "name": "Wijaya, Adrianto Mahendra",
+      "orcid": "0009-0009-0353-8408"
+    }
+  ],
+  "description": "Reproducibility package containing frozen configurations, manifests, implementation artifacts, predictions, verification scripts, and publication source data supporting the associated forensic audio codec-family attribution study.",
+  "keywords": [
+    "audio forensics",
+    "codec-family attribution",
+    "lossy audio compression",
+    "reliability validation",
+    "configuration shift",
+    "prospective confirmation",
+    "digital evidence",
+    "reproducibility"
+  ],
+  "license": "BSD-3-Clause",
+  "title": "Reproducibility Package for Configuration-Conditioned Reliability Boundaries in Blind Audio Codec-Family Attribution",
+  "upload_type": "software",
+  "version": "0.1.2"
+}

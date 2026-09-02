@@ -1,0 +1,97 @@
+{
+  "MFCC_LR_exact_config": {
+    "class_order": [
+      "AAC",
+      "MP3",
+      "Opus"
+    ],
+    "fit_scope": "B1_TRAIN_MFCC_ONLY",
+    "model": {
+      "C": 1.0,
+      "max_iter": 5000,
+      "multi_class": "multinomial",
+      "penalty": "l2",
+      "solver": "lbfgs",
+      "tol": 1e-08,
+      "type": "LogisticRegression"
+    },
+    "representation_id": "MFCC_STATISTICS_V1",
+    "scaler": {
+      "type": "StandardScaler",
+      "with_mean": true,
+      "with_std": true
+    },
+    "sklearn_version": "1.5.1",
+    "training_parents": 49,
+    "training_rows": 294
+  },
+  "MFCC_exact_representation_spec": {
+    "dct": {
+      "coefficients_retained": 20,
+      "norm": "ortho",
+      "type": "II"
+    },
+    "dimension": 40,
+    "fmax": 24000,
+    "fmin": 0,
+    "frame_count": 198,
+    "frame_length": 1200,
+    "hann_sha256": "5e6af3b7f01ed9a62461f8db643fbd0cedeb234e64df25708b50285c642bf4c2",
+    "hop_length": 480,
+    "mel_filterbank_sha256": "f69f5477b9301b6dffae285d89cfcbdc39d80c91d1c371079cd0f0de4aade579",
+    "mel_formula": "2595*log10(1+f/700)",
+    "n_fft": 2048,
+    "n_mels": 40,
+    "representation_id": "MFCC_STATISTICS_V1",
+    "sample_count": 96000,
+    "sample_rate": 48000,
+    "statistics": [
+      "temporal_mean",
+      "temporal_std_ddof0"
+    ]
+  },
+  "RF_exact_config": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": null,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "n_estimators": 500,
+    "n_jobs": 1,
+    "oob_score": false,
+    "random_state": 20261101,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "anti_fishing_statement": "NO ALTERNATIVE MODEL OR REPRESENTATION WILL BE SUBSTITUTED.",
+  "archive_md5": "32fa31d27d2e1cad72775fee3f4849a9",
+  "archive_sha256": "39fde525e59672dc6d1551919b1478f724438a95aa55f874b576be21967e6c23",
+  "codec_set": [
+    "AAC",
+    "MP3",
+    "Opus"
+  ],
+  "created_utc": "2026-08-31T16:42:47.563382+00:00",
+  "expected_derivatives": 480,
+  "external_corpus": "LibriSpeech test-clean",
+  "license": "CC BY 4.0",
+  "phase": "AQ-2D.0-BH",
+  "primary_arm_spec": "PRIMARY_A_LR: frozen STFT_LOGPOWER_STATS_V1 + frozen B1 StandardScaler + frozen multinomial LogisticRegression",
+  "rate_grid": [
+    32,
+    80,
+    96,
+    128
+  ],
+  "speaker_count": 40,
+  "specification_version": "v1.0",
+  "speech_parent_count": 40,
+  "speech_parent_manifest_sha256": "343ff52d584e16ef65406b3061f17647d9cf0fc24544b516dbcea77ea82386c0"
+}

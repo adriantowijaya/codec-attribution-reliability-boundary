@@ -1,0 +1,548 @@
+{
+  "phase": "AQ-2C.2",
+  "specification_version": "1.0",
+  "created_utc": "2026-08-31T12:55:07.609317+00:00",
+  "final_classification": "TRIANGULATION_PROBE_INADEQUATE",
+  "subclassification": "",
+  "AQ2C1B_freeze_sha256": "c7dfd6a06e32616fd9396e827af1f170e90f421c2b1f6d2a2997f3aa0fd86579",
+  "AQ2C1B_preprediction_freeze_sha256": "a9a19c65abbeed2dd8bcd7c1fdd8815511f10baa384a192d8132429c5e290c79",
+  "AQ2C2_probe_freeze_sha256": "fe603068bdeddb9621cd39cbf6f04ae08d78f82cc7f5b0b543d9953e4d554ea3",
+  "AQ2C2_preprediction_freeze_sha256": "b7859346747fa4f17960b17075ef199c269b595982af94d3129fe5491b0cf5e4",
+  "C2_parent_manifest_sha256": "55fac63b66659109871095ec7da0fd50d46c266a71c9983004e8865702d90ded",
+  "C2_parent_count": 60,
+  "parents_per_corpus": 20,
+  "discovery_parent_overlap": 0,
+  "C1B_parent_overlap": 0,
+  "discovery_pcm_collision": 0,
+  "C1B_pcm_collision": 0,
+  "within_C2_pcm_duplicate": 0,
+  "representation_id": "LOGSPECTRAL_TEMPORAL_MODULATION_V1",
+  "representation_spec_sha256": "ebd375e5ea6b6bbc5c8ce6ae5f02a7d8a21db32ec09b3689d97648c081934b7a",
+  "representation_extractor_sha256": "4397de7f2e086e4f8e62b915c6c34fb5fc192364c8f281c5b734b994f2f09582",
+  "representation_determinism_status": "PASS",
+  "probe_type": "StandardScaler + RidgeClassifier",
+  "probe_config": {
+    "scaler": {
+      "type": "StandardScaler",
+      "with_mean": true,
+      "with_std": true,
+      "fit_scope": "B1_TRAIN_REPRESENTATION_C_ONLY"
+    },
+    "classifier": {
+      "type": "RidgeClassifier",
+      "alpha": 1.0,
+      "fit_intercept": true,
+      "copy_X": true,
+      "max_iter": null,
+      "tol": 0.0001,
+      "class_weight": null,
+      "solver": "svd",
+      "positive": false,
+      "random_state": null
+    },
+    "class_order": [
+      "AAC",
+      "MP3",
+      "Opus"
+    ],
+    "training_rows": 294,
+    "training_parents": 49,
+    "packages": {
+      "python": "3.12.3",
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "pandas": "2.2.2",
+      "sklearn": "1.5.1"
+    }
+  },
+  "probe_numeric_sha256": "c1fa71cbd56d7677d8373cec79f26edf818e946fc61b613202a4d3925a9f8285",
+  "centroid_numeric_sha256": "8971ea043889836a4251592ddf18d6633467b69af7597177ce7d4b1388b97320",
+  "B1_train_parent_count": 49,
+  "B1_train_row_count": 294,
+  "C1B_data_used_for_training": "NO",
+  "C2_data_used_for_training": "NO",
+  "rate_grid": [
+    32,
+    48,
+    64,
+    80,
+    96,
+    128
+  ],
+  "codec_set": [
+    "AAC",
+    "MP3",
+    "Opus"
+  ],
+  "expected_derivative_count": 1080,
+  "actual_derivative_count": 1080,
+  "encode_success_count": 1080,
+  "probe_success_count": 1080,
+  "decode_success_count": 1080,
+  "alignment_success_count": 1080,
+  "feature_success_count": 1080,
+  "clean_feature_success_count": 60,
+  "endpoint_metrics": {
+    "BA_ENDPOINT_POOLED_C2": 0.6083333333333333,
+    "AAC_RECALL_32_C2": 0.6,
+    "AAC_RECALL_128_C2": 0.5666666666666667,
+    "AAC_ENDPOINT_RECALL_FLOOR_C2": 0.5666666666666667,
+    "C2_ENDPOINT_CONTROL_PASS": false,
+    "C2_ENDPOINT_SEVERE_FAIL": true
+  },
+  "per_rate_metrics": {
+    "32": {
+      "balanced_accuracy": 0.6944444444444445,
+      "macro_f1": 0.6943044426005335,
+      "accuracy": 0.6944444444444444,
+      "per_codec_recall": {
+        "AAC": 0.6,
+        "MP3": 0.7666666666666667,
+        "Opus": 0.7166666666666667
+      },
+      "confusion_matrix": [
+        [
+          36,
+          6,
+          18
+        ],
+        [
+          8,
+          46,
+          6
+        ],
+        [
+          11,
+          6,
+          43
+        ]
+      ],
+      "n": 180,
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ]
+    },
+    "48": {
+      "balanced_accuracy": 0.4444444444444445,
+      "macro_f1": 0.4077039812392725,
+      "accuracy": 0.4444444444444444,
+      "per_codec_recall": {
+        "AAC": 0.5,
+        "MP3": 0.11666666666666667,
+        "Opus": 0.7166666666666667
+      },
+      "confusion_matrix": [
+        [
+          30,
+          5,
+          25
+        ],
+        [
+          44,
+          7,
+          9
+        ],
+        [
+          8,
+          9,
+          43
+        ]
+      ],
+      "n": 180,
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ]
+    },
+    "64": {
+      "balanced_accuracy": 0.43333333333333335,
+      "macro_f1": 0.4149735683540367,
+      "accuracy": 0.43333333333333335,
+      "per_codec_recall": {
+        "AAC": 0.45,
+        "MP3": 0.21666666666666667,
+        "Opus": 0.6333333333333333
+      },
+      "confusion_matrix": [
+        [
+          27,
+          9,
+          24
+        ],
+        [
+          23,
+          13,
+          24
+        ],
+        [
+          14,
+          8,
+          38
+        ]
+      ],
+      "n": 180,
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ]
+    },
+    "80": {
+      "balanced_accuracy": 0.45,
+      "macro_f1": 0.43769132977370967,
+      "accuracy": 0.45,
+      "per_codec_recall": {
+        "AAC": 0.45,
+        "MP3": 0.26666666666666666,
+        "Opus": 0.6333333333333333
+      },
+      "confusion_matrix": [
+        [
+          27,
+          5,
+          28
+        ],
+        [
+          20,
+          16,
+          24
+        ],
+        [
+          8,
+          14,
+          38
+        ]
+      ],
+      "n": 180,
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ]
+    },
+    "96": {
+      "balanced_accuracy": 0.5277777777777778,
+      "macro_f1": 0.5261029714621948,
+      "accuracy": 0.5277777777777778,
+      "per_codec_recall": {
+        "AAC": 0.55,
+        "MP3": 0.43333333333333335,
+        "Opus": 0.6
+      },
+      "confusion_matrix": [
+        [
+          33,
+          6,
+          21
+        ],
+        [
+          19,
+          26,
+          15
+        ],
+        [
+          13,
+          11,
+          36
+        ]
+      ],
+      "n": 180,
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ]
+    },
+    "128": {
+      "balanced_accuracy": 0.5222222222222223,
+      "macro_f1": 0.5171537204625439,
+      "accuracy": 0.5222222222222223,
+      "per_codec_recall": {
+        "AAC": 0.5666666666666667,
+        "MP3": 0.38333333333333336,
+        "Opus": 0.6166666666666667
+      },
+      "confusion_matrix": [
+        [
+          34,
+          8,
+          18
+        ],
+        [
+          22,
+          23,
+          15
+        ],
+        [
+          12,
+          11,
+          37
+        ]
+      ],
+      "n": 180,
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ]
+    }
+  },
+  "AAC_rate_profile": {
+    "32": {
+      "codec": "AAC",
+      "nominal_rate_kbps": 32,
+      "n": 60,
+      "recall": 0.6,
+      "median_TRUE_MARGIN": 0.621227220429237,
+      "fraction_TRUE_MARGIN_gt_0": 0.6,
+      "fraction_TRUE_CENTROID_RANK_1": 0.8666666666666667,
+      "fraction_WRONG_CENTROID_CLOSER": 0.13333333333333333,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.75
+    },
+    "48": {
+      "codec": "AAC",
+      "nominal_rate_kbps": 48,
+      "n": 60,
+      "recall": 0.5,
+      "median_TRUE_MARGIN": 0.014754384787553726,
+      "fraction_TRUE_MARGIN_gt_0": 0.5,
+      "fraction_TRUE_CENTROID_RANK_1": 0.6833333333333333,
+      "fraction_WRONG_CENTROID_CLOSER": 0.31666666666666665,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.8333333333333334
+    },
+    "64": {
+      "codec": "AAC",
+      "nominal_rate_kbps": 64,
+      "n": 60,
+      "recall": 0.45,
+      "median_TRUE_MARGIN": -0.08204114808759737,
+      "fraction_TRUE_MARGIN_gt_0": 0.45,
+      "fraction_TRUE_CENTROID_RANK_1": 0.6,
+      "fraction_WRONG_CENTROID_CLOSER": 0.4,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.7272727272727273
+    },
+    "80": {
+      "codec": "AAC",
+      "nominal_rate_kbps": 80,
+      "n": 60,
+      "recall": 0.45,
+      "median_TRUE_MARGIN": -0.3544467329767184,
+      "fraction_TRUE_MARGIN_gt_0": 0.45,
+      "fraction_TRUE_CENTROID_RANK_1": 0.5166666666666667,
+      "fraction_WRONG_CENTROID_CLOSER": 0.48333333333333334,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.8484848484848485
+    },
+    "96": {
+      "codec": "AAC",
+      "nominal_rate_kbps": 96,
+      "n": 60,
+      "recall": 0.55,
+      "median_TRUE_MARGIN": 0.18398624717461218,
+      "fraction_TRUE_MARGIN_gt_0": 0.55,
+      "fraction_TRUE_CENTROID_RANK_1": 0.45,
+      "fraction_WRONG_CENTROID_CLOSER": 0.55,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.7777777777777778
+    },
+    "128": {
+      "codec": "AAC",
+      "nominal_rate_kbps": 128,
+      "n": 60,
+      "recall": 0.5666666666666667,
+      "median_TRUE_MARGIN": 0.3795261783179995,
+      "fraction_TRUE_MARGIN_gt_0": 0.5666666666666667,
+      "fraction_TRUE_CENTROID_RANK_1": 0.48333333333333334,
+      "fraction_WRONG_CENTROID_CLOSER": 0.5166666666666667,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.6923076923076923
+    }
+  },
+  "bootstrap_summary": {
+    "48": {
+      "seed": 20261049,
+      "p2_5": -0.05,
+      "p50": 0.08333333333333333,
+      "p97_5": 0.21666666666666667,
+      "C2_PAIRED_DROP_STABLE": false,
+      "replicates": 10000
+    },
+    "64": {
+      "seed": 20261065,
+      "p2_5": 0.025,
+      "p50": 0.13333333333333333,
+      "p97_5": 0.25,
+      "C2_PAIRED_DROP_STABLE": true,
+      "replicates": 10000
+    },
+    "80": {
+      "seed": 20261081,
+      "p2_5": 0.016666666666666666,
+      "p50": 0.13333333333333333,
+      "p97_5": 0.25,
+      "C2_PAIRED_DROP_STABLE": true,
+      "replicates": 10000
+    },
+    "96": {
+      "seed": 20261097,
+      "p2_5": -0.09166666666666666,
+      "p50": 0.03333333333333333,
+      "p97_5": 0.15833333333333333,
+      "C2_PAIRED_DROP_STABLE": false,
+      "replicates": 10000
+    }
+  },
+  "multi_corpus_summary": {
+    "48": {
+      "corpus_degradation": {
+        "Orchset": true,
+        "IRMAS": false,
+        "FSDnoisy18k": true
+      },
+      "MULTI_CORPUS_TRUE_COUNT": 2,
+      "C2_MULTI_CORPUS_CONFIRMATION": true
+    },
+    "64": {
+      "corpus_degradation": {
+        "Orchset": true,
+        "IRMAS": true,
+        "FSDnoisy18k": true
+      },
+      "MULTI_CORPUS_TRUE_COUNT": 3,
+      "C2_MULTI_CORPUS_CONFIRMATION": true
+    },
+    "80": {
+      "corpus_degradation": {
+        "Orchset": true,
+        "IRMAS": true,
+        "FSDnoisy18k": true
+      },
+      "MULTI_CORPUS_TRUE_COUNT": 3,
+      "C2_MULTI_CORPUS_CONFIRMATION": true
+    },
+    "96": {
+      "corpus_degradation": {
+        "Orchset": true,
+        "IRMAS": false,
+        "FSDnoisy18k": true
+      },
+      "MULTI_CORPUS_TRUE_COUNT": 2,
+      "C2_MULTI_CORPUS_CONFIRMATION": true
+    }
+  },
+  "full_C2_triangulation_events": {
+    "48": false,
+    "64": false,
+    "80": false,
+    "96": false
+  },
+  "C1B_profile_comparison": {
+    "rates": [
+      32,
+      48,
+      64,
+      80,
+      96,
+      128
+    ],
+    "C1B_AAC_recall": [
+      0.9166666666666666,
+      0.15,
+      0.08333333333333333,
+      0.06666666666666667,
+      0.08333333333333333,
+      0.9
+    ],
+    "C2_AAC_recall": [
+      0.6,
+      0.5,
+      0.45,
+      0.45,
+      0.55,
+      0.5666666666666667
+    ],
+    "C1B_per_rate_BA": [
+      0.8833333333333333,
+      0.39444444444444443,
+      0.42777777777777776,
+      0.4444444444444445,
+      0.48888888888888893,
+      0.8000000000000002
+    ],
+    "C2_per_rate_BA": [
+      0.6944444444444445,
+      0.4444444444444445,
+      0.43333333333333335,
+      0.45,
+      0.5277777777777778,
+      0.5222222222222223
+    ],
+    "C2_full_event_status": {
+      "48": false,
+      "64": false,
+      "80": false,
+      "96": false
+    },
+    "C1B_C2_AAC_recall_spearman_rho": 0.8676470588235294,
+    "C1B_C2_AAC_recall_spearman_p_value": 0.025116718400162795
+  },
+  "new_training_performed": "YES",
+  "model_refit_or_retraining_of_B1_performed": "NO",
+  "new_C2_probe_training_performed": "YES",
+  "vorbis_used": "NO",
+  "representation_A_primary_scientific_use": "NO",
+  "representation_B_used": "NO",
+  "AQ2A_v1_frozen_artifacts_modified": "NO",
+  "AQ2A_R1_frozen_artifacts_modified": "NO",
+  "AQ2A_R2_frozen_artifacts_modified": "NO",
+  "AQ2B0_frozen_artifacts_modified": "NO",
+  "AQ2B1_frozen_artifacts_modified": "NO",
+  "AQ2B1_DX_frozen_artifacts_modified": "NO",
+  "AQ2C1A_frozen_artifacts_modified": "NO",
+  "AQ2C1B_frozen_artifacts_modified": "NO",
+  "existing_MM_artifacts_modified": "NO",
+  "remaining_blockers": [],
+  "artifact_hashes": {
+    "32_triangulation_corpus_c2/AQ2C2_parent_manifest.csv": "55fac63b66659109871095ec7da0fd50d46c266a71c9983004e8865702d90ded",
+    "32_triangulation_corpus_c2/AQ2C2_parent_file_sha256s.txt": "f290f53c1e6b5343ae20b3bfb33074c3c975b9144bfcef74ec15b8dbe3115b94",
+    "32_triangulation_corpus_c2/candidate_audit/AQ2C2_used_parent_exclusion.csv": "70e4384e5b2db0cb780489d3e85ec52dd45ecce6636af7440d9efde21c34be97",
+    "32_triangulation_corpus_c2/candidate_audit/AQ2C2_parent_overlap_audit.json": "9485990ab5a3f5dda31af5debe36bf8ec9482db9322491a937ed2f893e70c0a7",
+    "32_triangulation_corpus_c2/derivatives/AQ2C2_derivative_manifest.csv": "1021b44cc0a3189a3577e14c1f4990776b4831712e6991a7f88d42cd7312ac4f",
+    "32_triangulation_corpus_c2/derivatives/AQ2C2_derivative_file_sha256s.txt": "60dd85eafa23f4128f4d8ea4f6080846b329ffed86017a47ac2ecb8e5aab8caa",
+    "32_triangulation_corpus_c2/derivatives/AQ2C2_collision_audit.csv": "8373f309f5cb86b48056694933d56c4c8e7edaf2a2d5ffc7e1ada9cccb65d870",
+    "32_triangulation_corpus_c2/derivatives/AQ2C2_achieved_rate_summary.csv": "898a65a44ca2e66b7fcc2a33394aaa2697d87c6f7e65401f756db2705c820d0e",
+    "33_representation_c2/spec/AQ2C2_representation_spec.json": "ebd375e5ea6b6bbc5c8ce6ae5f02a7d8a21db32ec09b3689d97648c081934b7a",
+    "33_representation_c2/extractor/aq2c2_temporal_modulation_extractor.py": "4397de7f2e086e4f8e62b915c6c34fb5fc192364c8f281c5b734b994f2f09582",
+    "33_representation_c2/determinism/AQ2C2_representation_determinism.csv": "dd95a3aeb1b67fb1b8529cf8eab8446333eb29a0d047c62b8fed6f59db7d785e",
+    "33_representation_c2/AQ2C2_feature_manifest.csv": "f2c188dc1ef58c76ec8dee6484bcf5f5076e9feccdee82c4c723e62c4e0a1d2f",
+    "33_representation_c2/AQ2C2_clean_feature_manifest.csv": "0d097a602486abcc4f8e6b393030467607813e0fb665623a12039218f61de018",
+    "33_representation_c2/AQ2C2_feature_file_sha256s.txt": "3cf8b86ad5400b617944bc840ae9f83e302db198475c39e51a661190b7d752e8",
+    "34_probe_c2/model/AQ2C2_probe_numeric.npz": "c1fa71cbd56d7677d8373cec79f26edf818e946fc61b613202a4d3925a9f8285",
+    "34_probe_c2/model/AQ2C2_probe_config.json": "1cc2bdab418c8d0bb92f6fe3c0d061577d2076a8f59e53dd8ae1243b1a2b15f1",
+    "34_probe_c2/centroids/AQ2C2_train_centroids.npz": "8971ea043889836a4251592ddf18d6633467b69af7597177ce7d4b1388b97320",
+    "03_manifests/AQ2C2_PROBE_FREEZE.json": "fe603068bdeddb9621cd39cbf6f04ae08d78f82cc7f5b0b543d9953e4d554ea3",
+    "03_manifests/AQ2C2_PREPREDICTION_FREEZE.json": "b7859346747fa4f17960b17075ef199c269b595982af94d3129fe5491b0cf5e4",
+    "35_results_c2/predictions/AQ2C2_all_predictions.csv": "e1a84317be8389d7dc122e7131f07831cfcd3105b50f54824b5710ab12cc37e6",
+    "35_results_c2/per_rate/AQ2C2_per_rate_metrics.json": "7af5500ac8849e7c8d65398c29a222ee6f511b8a05f29070437f9bdf4346ada4",
+    "35_results_c2/per_rate/AQ2C2_per_codec_rate_summary.csv": "cfa66456389951b0d80cf1a277b4ef2f44e1093c387f648a58dd200bd5bbd951",
+    "35_results_c2/bootstrap/AQ2C2_AAC_bootstrap_summary.json": "aabab18bfe4014dbd32915e190f657087e290caf96248a2c247a5b891952f64c",
+    "35_results_c2/corpus/AQ2C2_AAC_corpus_rate_summary.csv": "d0b5a8877d8a80dca86235a94b782c6f04e4a3ed200232d6ceae7314eb13b784",
+    "35_results_c2/corpus/AQ2C2_multi_corpus_gate.json": "4a72a22bb0fd80e8f969fd9791b8755fefc3f8fbae10f0c04431f9dd704125ed",
+    "35_results_c2/geometry/AQ2C2_clean_distance.csv": "3b875687aacaf64eebe0892e0ff2389737d6e4095b3eafd508b5281d250abb7a",
+    "35_results_c2/geometry/AQ2C2_endpoint_trajectory_geometry.csv": "31035d5c61024e06ecedc4bf47c86da7adfdf32fe33986eacd2aca62a75c1cb9",
+    "35_results_c2/comparison/AQ2C2_C1B_profile_comparison.json": "0e88ef5520294542b38b22401e36785cc22bf1dbe3a3fac0aab350af7d157d7f",
+    "35_results_c2/gate/AQ2C2_triangulation_gate.json": "e490de0b8f6289772e6e0acdce79294a735d3df40481a3b26c765f441a382a7c",
+    "35_results_c2/gate/AQ2C2_triangulation_summary.json": "730dd79423f6903ecf811baf7c268994caa48b02b628f1b09570a700696ff35b",
+    "logs_c2/AQ2C2_execution_script.py": "b265b4d989eb9dfa501eff6fcbc2537322969dfde5dbd60f9fd7b3d2534f2674",
+    "35_results_c2/bootstrap/AQ2C2_AAC_bootstrap_48.csv": "7821addfa31e6c688d52438732f5d003410bbf6a305ff523ad0a4ff35b0a3590",
+    "35_results_c2/bootstrap/AQ2C2_AAC_bootstrap_64.csv": "75cc6aacb2de00eea40edda08ad7b208265197b249d3059c0b3d4c34204a694d",
+    "35_results_c2/bootstrap/AQ2C2_AAC_bootstrap_80.csv": "e062e056c880e4765e6cb5d54dd17d448e1ef00301b653b808b3ab042880a5cd",
+    "35_results_c2/bootstrap/AQ2C2_AAC_bootstrap_96.csv": "007a3645191c06a53871f708b8b3e8ffdb96defc042d3b6a3ba9507e1107f190"
+  }
+}

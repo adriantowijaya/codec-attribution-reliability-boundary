@@ -1,0 +1,15 @@
+{
+  "families": [
+    "AAC",
+    "MP3",
+    "Opus"
+  ],
+  "operating_rates_kbps": [
+    32,
+    48,
+    64,
+    80,
+    96,
+    128
+  ]
+}

@@ -1,0 +1,13 @@
+# Human Metadata Gate
+
+AUTHOR ORDER ................. PASS
+AFFILIATIONS ................ PASS
+ORCID ....................... PASS
+CORRESPONDING AUTHOR ........ PASS
+GITHUB OWNER ................ PASS
+GITHUB REPOSITORY ........... PASS
+GIT COMMIT IDENTITY ......... PASS
+SOFTWARE LICENSE ............ PASS
+DATA/DOCUMENTATION LICENSE .. PASS
+
+HUMAN METADATA GATE = SATISFIED

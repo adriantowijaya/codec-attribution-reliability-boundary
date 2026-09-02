@@ -1,0 +1,6 @@
+evaluation_role,development_or_validation_competence,target_domain,target_endpoint_BA,AAC_recall_32,AAC_recall_128,endpoint_gate,formal_outcome,authorized_scientific_use,claim_boundary
+C1B primary frozen probe,endpoint competent,untouched music confirmation,0.842,0.917,0.900,PASS,PASS_NEW_RATE_BOUNDARY_CONFIRMED,PRIMARY_CONFIRMATORY,frozen primary probe and tested music corpora
+C2 temporal-modulation + Ridge,endpoint inadequate,music triangulation cohort,0.608,0.600,0.567,FAIL,TRIANGULATION_PROBE_INADEQUATE,GENERALITY_UNRESOLVED_ENDPOINT_INADEQUATE,cannot confirm or refute cross-representation generality
+BH primary A+LR,speech endpoint inadequate,LibriSpeech test-clean,0.371,0.050,0.125,FAIL,BREADTH_PROBES_INADEQUATE,EXTERNAL_DOMAIN_GENERALITY_UNRESOLVED,speech boundary not established
+BH Representation-A + RF,validation competent; speech endpoint inadequate,LibriSpeech test-clean,0.354,0.125,0.000,FAIL,BREADTH_PROBES_INADEQUATE,EXTERNAL_DOMAIN_GENERALITY_UNRESOLVED,not a rescue model
+BH MFCC + LR,validation competent; speech endpoint inadequate,LibriSpeech test-clean,0.392,0.000,0.000,FAIL,BREADTH_PROBES_INADEQUATE,EXTERNAL_DOMAIN_GENERALITY_UNRESOLVED,not a head-to-head classifier ranking

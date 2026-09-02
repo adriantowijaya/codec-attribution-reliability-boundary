@@ -1,0 +1,69 @@
+{
+  "confirmation": {
+    "AAC_recall_128": 0.9,
+    "AAC_recall_32": 0.9166666666666667,
+    "endpoint_BA": 0.8416666666666667,
+    "parent_count": 60
+  },
+  "discovery": {
+    "heldout_64_BA": 0.392156862745098,
+    "heldout_64_macro_F1": 0.3333333333333333,
+    "parent_count": 82,
+    "permutation_p": 0.20267973202679732,
+    "represented_endpoint_BA": 0.8529411764705882,
+    "split": {
+      "test": 17,
+      "train": 49,
+      "validation": 16
+    }
+  },
+  "dominant_error_role_metadata": {
+    "48": "prospective new-rate probe",
+    "64": "discovery-rate replication; descriptive dominant-error continuity only",
+    "80": "prospective new-rate probe",
+    "96": "prospective new-rate probe"
+  },
+  "dominant_error_share": {
+    "48": 0.5882352941176471,
+    "64": 0.8,
+    "80": 0.6785714285714286,
+    "96": 0.7272727272727273
+  },
+  "dominant_error_threshold": 0.6,
+  "event_logic": {
+    "48": {
+      "dominant_error_share": 0.5882352941176471,
+      "full_event": false,
+      "threshold": 0.6
+    },
+    "64": {
+      "dominant_error_role": "descriptive_continuity_only",
+      "dominant_error_share": 0.8,
+      "replication": true,
+      "threshold": 0.6
+    },
+    "80": {
+      "dominant_error_share": 0.6785714285714286,
+      "full_event": true,
+      "threshold": 0.6
+    },
+    "96": {
+      "dominant_error_share": 0.7272727272727273,
+      "full_event": true,
+      "threshold": 0.6
+    }
+  },
+  "events": {
+    "48_full_event": false,
+    "64_discovery_rate_replication": true,
+    "80_full_event": true,
+    "96_full_event": true
+  },
+  "generality": {
+    "alternative_representation_endpoint_BA": 0.6083333333,
+    "speech_MFCC_endpoint_BA": 0.3916666667,
+    "speech_RF_endpoint_BA": 0.3541666667,
+    "speech_primary_endpoint_BA": 0.3708333333
+  },
+  "source": "Populated from RP1A high-confidence traceability anchors and checked against frozen artifacts."
+}

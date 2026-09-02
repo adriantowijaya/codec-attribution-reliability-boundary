@@ -1,0 +1,279 @@
+{
+  "phase": "AQ-2B.1",
+  "specification_version": "1.0",
+  "created_utc": "2026-08-30T14:41:37.506416+00:00",
+  "final_classification": "STOP_MFEA1_TRACE_NOT_SUPPORTED",
+  "subclassification": "",
+  "AQ2B0_freeze_sha256": "e4d714e3902ece12f27caedf7e502a105e9a08066b97d73d755ba69f419d96ab",
+  "AQ2A_R2_freeze_sha256": "dfec802d21f7210b39ffbdc13ac825245c04a692509b70c2b8426a6c9cb7d26f",
+  "corpus_set_sha256": "76daaf1fbd368166c803b0a6d6839d68dd6ed755dd7ac9887a8c49d951c85059",
+  "canonical_parent_count": 82,
+  "split_counts": {
+    "TRAIN": 49,
+    "VALIDATION": 16,
+    "TEST": 17
+  },
+  "python_path": "[REDACTED_LOCAL_PATH]\\anaconda3\\python.exe",
+  "python_sha256": "62c225fb9cdc41b139c7024581c233644f975ffc35314558c60ebefa6b88be01",
+  "python_version": "3.12.3 | packaged by conda-forge | (main, Apr 15 2024, 18:20:11) [MSC v.1938 64 bit (AMD64)]",
+  "feature_spec_sha256": "83020402082b7168d88df8d1eb02fc4f254d24b6fbd4ab0770403d1f96c1acae",
+  "feature_extractor_sha256": "6c79cbc06c67c9cff140cd64de6f878ea59f1b1580bb7db0b0acb08a4a57da8f",
+  "representation_used": "STFT_LOGPOWER_STATS_V1",
+  "known_codec_set": [
+    "AAC",
+    "MP3",
+    "Opus"
+  ],
+  "vorbis_scientific_quarantine": "ACTIVE",
+  "train_rates": [
+    32,
+    128
+  ],
+  "validation_rates": [
+    32,
+    128
+  ],
+  "test_rates": [
+    32,
+    64,
+    128
+  ],
+  "heldout_rate": 64,
+  "expected_derivative_count": 543,
+  "actual_derivative_count": 543,
+  "train_derivative_count": 294,
+  "validation_derivative_count": 96,
+  "test_derivative_count": 153,
+  "parent_disjointness_status": "PASS",
+  "lossless_negative_identifiability_sentinel": "PASS",
+  "encoder_ffmpeg_sha256": "57c56e369d5b4873b4d93fc1a1d833cb7cd8bc9325c14b05c34ce60b22842d8a",
+  "ffprobe_sha256": "afe05347caaabe479b3c4eae71992b6ec1e11c57266a1d665deb0f9fe9847208",
+  "common_decoder_sha256": "4dc3e63209cb6f183b703c8842f6e3dcc22778ccca1a3b9f4b5fca4034bb54dd",
+  "encode_success_count": 543,
+  "decode_success_count": 543,
+  "alignment_success_count": 543,
+  "feature_success_count": 543,
+  "collision_audit_summary": {
+    "collision_rows": 0,
+    "cross_label_collisions": 0
+  },
+  "model_type": "StandardScaler + multinomial LogisticRegression",
+  "model_configuration": {
+    "scaler": {
+      "type": "StandardScaler",
+      "with_mean": true,
+      "with_std": true,
+      "fit_scope": "TRAIN_ONLY"
+    },
+    "model": {
+      "type": "LogisticRegression",
+      "penalty": "l2",
+      "C": 1.0,
+      "solver": "lbfgs",
+      "multi_class": "multinomial",
+      "fit_intercept": true,
+      "class_weight": null,
+      "max_iter": 5000,
+      "tol": 1e-08
+    },
+    "class_order": [
+      "AAC",
+      "MP3",
+      "Opus"
+    ],
+    "packages": {
+      "python": "3.12.3 | packaged by conda-forge | (main, Apr 15 2024, 18:20:11) [MSC v.1938 64 bit (AMD64)]",
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "pandas": "2.2.2",
+      "sklearn": "1.5.1"
+    },
+    "n_iter": [
+      234
+    ],
+    "classes_": [
+      "AAC",
+      "MP3",
+      "Opus"
+    ],
+    "coef_shape": [
+      3,
+      256
+    ],
+    "intercept_shape": [
+      3
+    ],
+    "training_row_count": 294,
+    "feature_dimension": 256,
+    "zero_variance_train_feature_count": 0,
+    "convergence_warning": ""
+  },
+  "scaler_fit_scope": "TRAIN_ONLY",
+  "model_numeric_sha256": "7850e14a7231ac5d2d06a72c6c2eb487cedd7df32cf5750bf62ddda79932b5de",
+  "model_config_sha256": "495b976b5fe558faee6a374707e5629c04a8d8b844f5aea9d178259db5d1fdff",
+  "pretest_model_freeze_sha256": "2eb6c5216196a72466693d7b68a919762d1ebd4b8cb5207ee7639b8758a67f2c",
+  "validation_metrics": {
+    "balanced_accuracy": 0.9270833333333334,
+    "macro_f1": 0.9275615588115588,
+    "accuracy": 0.9270833333333334,
+    "per_class_recall": {
+      "AAC": 0.96875,
+      "MP3": 0.90625,
+      "Opus": 0.90625
+    },
+    "confusion_matrix": [
+      [
+        31,
+        1,
+        0
+      ],
+      [
+        0,
+        29,
+        3
+      ],
+      [
+        0,
+        3,
+        29
+      ]
+    ],
+    "class_order": [
+      "AAC",
+      "MP3",
+      "Opus"
+    ]
+  },
+  "test_seen_metrics": {
+    "balanced_accuracy": 0.8529411764705882,
+    "macro_f1": 0.8548643520180521,
+    "accuracy": 0.8529411764705882,
+    "per_class_recall": {
+      "AAC": 0.8235294117647058,
+      "MP3": 0.8235294117647058,
+      "Opus": 0.9117647058823529
+    },
+    "confusion_matrix": [
+      [
+        28,
+        3,
+        3
+      ],
+      [
+        0,
+        28,
+        6
+      ],
+      [
+        0,
+        3,
+        31
+      ]
+    ],
+    "class_order": [
+      "AAC",
+      "MP3",
+      "Opus"
+    ]
+  },
+  "test_mid_primary_metrics": {
+    "balanced_accuracy": 0.392156862745098,
+    "macro_f1": 0.3333333333333333,
+    "accuracy": 0.39215686274509803,
+    "per_class_recall": {
+      "AAC": 0.0,
+      "MP3": 0.4117647058823529,
+      "Opus": 0.7647058823529411
+    },
+    "confusion_matrix": [
+      [
+        0,
+        14,
+        3
+      ],
+      [
+        4,
+        7,
+        6
+      ],
+      [
+        0,
+        4,
+        13
+      ]
+    ],
+    "class_order": [
+      "AAC",
+      "MP3",
+      "Opus"
+    ]
+  },
+  "parent_bootstrap_summary": {
+    "bootstrap_reps": 10000,
+    "bootstrap_seed": 20260830,
+    "balanced_accuracy_percentiles": {
+      "2.5": 0.3137254901960784,
+      "50": 0.39215686274509803,
+      "97.5": 0.4705882352941176
+    },
+    "macro_f1_percentiles": {
+      "2.5": 0.2560594089373159,
+      "50": 0.33162173727000427,
+      "97.5": 0.407843137254902
+    }
+  },
+  "parent_permutation_summary": {
+    "permutation_reps": 10000,
+    "permutation_seed": 20260831,
+    "observed_balanced_accuracy": 0.392156862745098,
+    "null_ge_observed": 2026,
+    "one_sided_p_value": 0.20267973202679732
+  },
+  "chance_balanced_accuracy": 0.3333333333333333,
+  "primary_gate_values": {
+    "BA_PRIMARY": 0.392156862745098,
+    "BOOTSTRAP_LOW": 0.3137254901960784,
+    "PERM_P": 0.20267973202679732,
+    "MIN_CLASS_RECALL": 0.0
+  },
+  "configuration_shift_gap": 0.4607843137254902,
+  "scientific_trace_gate": "STOP_MFEA1_TRACE_NOT_SUPPORTED",
+  "VORBIS_USED_IN_B1_SCIENTIFIC_DATA": "NO",
+  "representation_B_scientific_use": "NO",
+  "new_training_performed": "YES",
+  "model_weights_created": "YES",
+  "scientific_codec_result_produced": "YES",
+  "AQ2A_v1_frozen_artifacts_modified": "NO",
+  "AQ2A_R1_frozen_artifacts_modified": "NO",
+  "AQ2A_R2_frozen_artifacts_modified": "NO",
+  "AQ2B0_frozen_artifacts_modified": "NO",
+  "existing_MM_artifacts_modified": "NO",
+  "remaining_blockers": [],
+  "artifact_hashes": {
+    "16_derivatives_b1/AQ2B1_derivative_manifest.csv": "6f32143b4e0267e3f2acdf91404954a9ddb1e2ad5c5d5bf6cb99651dc9e021aa",
+    "16_derivatives_b1/AQ2B1_derivative_file_sha256s.txt": "4c45a03eeae6a7901507279521f8ba0085a72dce1de64a5d4ae2a2bba8ffc18a",
+    "17_features_b1/AQ2B1_feature_manifest.csv": "e6e9983484bea4d44756a7b9b71bbea85a687fbd07892cdd42ff9fcbbec74754",
+    "17_features_b1/AQ2B1_feature_file_sha256s.txt": "c829e8d2a6285afb70b2b56880d0a32079b882a43a70fe8a90185ca996f16b2c",
+    "18_model_b1/AQ2B1_model_numeric.npz": "7850e14a7231ac5d2d06a72c6c2eb487cedd7df32cf5750bf62ddda79932b5de",
+    "18_model_b1/AQ2B1_model_config.json": "495b976b5fe558faee6a374707e5629c04a8d8b844f5aea9d178259db5d1fdff",
+    "18_model_b1/AQ2B1_PRETEST_MODEL_FREEZE.json": "2eb6c5216196a72466693d7b68a919762d1ebd4b8cb5207ee7639b8758a67f2c",
+    "19_results_b1/AQ2B1_data_matrix_audit.json": "a57eb88d0d806cbc58eade903b5d6e6efc073591de7331b6dce7be0b3a67adfc",
+    "19_results_b1/AQ2B1_validation_metrics.json": "312c0196e4e5c5ccbc057a265664d37cfbcad46a85bc88e05850355ecad35e65",
+    "19_results_b1/AQ2B1_test_seen_metrics.json": "eaf966eb028dcb3308f68218ce85e22b967ae2dbc54272f326d0e364cc3bee28",
+    "19_results_b1/AQ2B1_test_mid_metrics.json": "ce4ec17a82074d0f0383ae4228ce5697d385e94ded666b4af278f7fc1a96b6b6",
+    "19_results_b1/predictions/AQ2B1_validation_predictions.csv": "974ad878b84ab5d40ecb483224080b9fbc602b067bc3645e498de2d588d431a0",
+    "19_results_b1/predictions/AQ2B1_test_seen_predictions.csv": "ea40cb1ade100f6dd8168be50ade5b32c09ef2bd6ad143dfe9b1e9375db0cba9",
+    "19_results_b1/predictions/AQ2B1_test_mid_predictions.csv": "7399eff10b036fa29072173f6c845a7930788033e9bc2a273b9b4be9733cded2",
+    "19_results_b1/bootstrap/AQ2B1_parent_bootstrap.csv": "ab7d62b446f12c08154333b091d07a5c65987933a212195d5612678d1d1c8bd6",
+    "19_results_b1/bootstrap/AQ2B1_parent_bootstrap_summary.json": "a345c9f7253b2b308e253d8d6f96a54ce62f079e309e68537c61cff36bbd65ba",
+    "19_results_b1/permutation/AQ2B1_parent_permutation.csv": "94c34fced16f9f7c15ab85acbdb04f243d01c6449426ccf41a1d16a6402d3e1f",
+    "19_results_b1/permutation/AQ2B1_parent_permutation_summary.json": "1fa15fe77952ce45dab6e5d9cf7da3a214e3d545475fa0023398c8c88fa94cb3",
+    "19_results_b1/diagnostics/AQ2B1_parent_split_audit.csv": "64e09274c10a16d3fb3af4ce15d66c8bd1568e3bc6609fefbefda108a3910a4d",
+    "19_results_b1/diagnostics/AQ2B1_collision_audit.csv": "8ee2c4e1a1c85288ba136b270ece4b6eb698210b10aaf57d95a447de79c312b7",
+    "19_results_b1/diagnostics/AQ2B1_condition_summary.csv": "e7193915a17fcb476cf347b8b89f1bbda3c43eb66740610c154e8bd11b7717bb",
+    "19_results_b1/diagnostics/AQ2B1_confusion_matrices.json": "8333c7a88e5d4560926a4a6436d6a9725a1b275fc04e1f4fddddbd22b147f875",
+    "19_results_b1/diagnostics/AQ2B1_achieved_rate_summary.csv": "98f9cbb36fcf80be2b28fb2419a352a35ee12720df1b6817ec32e0ec20b22d45",
+    "logs_b1/AQ2B1_execution_script.py": "34fe3d0243ea51e7bcad954aa6a1630ffcb05959e2e314e244fea915c9c36ce7",
+    "logs_b1/AQ2B1_command_log.txt": "278ab4ec5a2f681eb6ef9fa2da9d8a6317f163305dd90f54b9529c095874de25"
+  }
+}

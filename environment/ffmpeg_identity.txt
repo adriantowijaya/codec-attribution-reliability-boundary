@@ -1,0 +1,1 @@
+Codec toolchain identity is preserved from local authoritative project records where included; FFmpeg binaries/installers are excluded.

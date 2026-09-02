@@ -1,0 +1,126 @@
+{
+  "phase": "AQ-2C.1A",
+  "specification_version": "1.0",
+  "created_utc": "2026-08-31T10:06:41.640977+00:00",
+  "final_classification": "PASS_CONFIRMATION_DESIGN_FROZEN",
+  "subclassification": "",
+  "AQ2B1_DX_freeze_sha256": "c1d1c707cc286ced6750b0dfead1ae830be25349b36bfb1321c6d2a9b465172d",
+  "AQ2B1_freeze_sha256": "ee744c7324ce46d6a06ea9f58bbe830a82a7eb1a11f81f1cb12b42cf0e41c8ed",
+  "AQ2B1_pretest_model_freeze_sha256": "2eb6c5216196a72466693d7b68a919762d1ebd4b8cb5207ee7639b8758a67f2c",
+  "AQ2B0_freeze_sha256": "e4d714e3902ece12f27caedf7e502a105e9a08066b97d73d755ba69f419d96ab",
+  "AQ2A_R2_freeze_sha256": "dfec802d21f7210b39ffbdc13ac825245c04a692509b70c2b8426a6c9cb7d26f",
+  "historical_discovery_parent_count": 82,
+  "candidate_counts_by_corpus": {
+    "Orchset": 128,
+    "IRMAS": 6705,
+    "FSDnoisy18k": 947
+  },
+  "eligible_counts_by_corpus": {
+    "Orchset": 88,
+    "IRMAS": 6615,
+    "FSDnoisy18k": 613
+  },
+  "confirmation_parents_per_corpus": 20,
+  "confirmation_parent_count": 60,
+  "confirmation_parent_manifest_sha256": "8f5cace862a0066e7bc6c47e23816206dc9069d8841234186c20a747868e69d8",
+  "confirmation_parents_untouched": "YES",
+  "discovery_parent_overlap_count": 0,
+  "discovery_pcm_collision_count": 0,
+  "within_confirmation_pcm_duplicate_count": 0,
+  "canonicalization_contract": {
+    "sample_rate": 48000,
+    "channels": 1,
+    "sample_format": "PCM16 little-endian",
+    "segment_duration_seconds": 2.0,
+    "sample_count": 96000,
+    "crop": "deterministic center crop",
+    "padding": "prohibited",
+    "normalization": "prohibited",
+    "denoising": "prohibited",
+    "filtering": "prohibited"
+  },
+  "codec_set": [
+    "AAC",
+    "MP3",
+    "Opus"
+  ],
+  "rate_grid": [
+    32,
+    48,
+    64,
+    80,
+    96,
+    128
+  ],
+  "new_probe_rates": [
+    48,
+    80,
+    96
+  ],
+  "discovery_replication_rate": 64,
+  "seen_endpoint_rates": [
+    32,
+    128
+  ],
+  "preflight_parent_count": 3,
+  "preflight_attempt_count": 54,
+  "preflight_encode_success_count": 54,
+  "preflight_probe_success_count": 54,
+  "preflight_decode_success_count": 54,
+  "preflight_alignment_success_count": 54,
+  "new_rate_operational_status": {
+    "48": {
+      "AAC": true,
+      "MP3": true,
+      "Opus": true
+    },
+    "80": {
+      "AAC": true,
+      "MP3": true,
+      "Opus": true
+    },
+    "96": {
+      "AAC": true,
+      "MP3": true,
+      "Opus": true
+    }
+  },
+  "expected_C1B_derivative_count": 1080,
+  "prospective_confirmation_spec_path": "[REDACTED_LOCAL_PATH]\\Tony Hidayat\\AQ_OpenWorld_Codec_Provenance\\25_design_c1a\\AQ2C1B_PROSPECTIVE_CONFIRMATION_SPEC.json",
+  "prospective_confirmation_spec_sha256": "cc65c5b616e03106dbccbadeb2be1a36bf0f66ecdd67700dc7e94ac3f9cf1a5f",
+  "frozen_model_numeric_sha256": "7850e14a7231ac5d2d06a72c6c2eb487cedd7df32cf5750bf62ddda79932b5de",
+  "frozen_model_config_sha256": "495b976b5fe558faee6a374707e5629c04a8d8b844f5aea9d178259db5d1fdff",
+  "feature_spec_sha256": "83020402082b7168d88df8d1eb02fc4f254d24b6fbd4ab0770403d1f96c1acae",
+  "feature_extractor_sha256": "6c79cbc06c67c9cff140cd64de6f878ea59f1b1580bb7db0b0acb08a4a57da8f",
+  "confirmation_prediction_count": 0,
+  "confirmation_model_predictions_generated": "NO",
+  "new_training_performed": "NO",
+  "model_refit_performed": "NO",
+  "new_model_weights_created": "NO",
+  "scientific_confirmation_result_produced": "NO",
+  "vorbis_used": "NO",
+  "representation_B_used": "NO",
+  "C1A_PREFLIGHT_DERIVATIVES_SCIENTIFIC_USE": "NO",
+  "AQ2A_v1_frozen_artifacts_modified": "NO",
+  "AQ2A_R1_frozen_artifacts_modified": "NO",
+  "AQ2A_R2_frozen_artifacts_modified": "NO",
+  "AQ2B0_frozen_artifacts_modified": "NO",
+  "AQ2B1_frozen_artifacts_modified": "NO",
+  "AQ2B1_DX_frozen_artifacts_modified": "NO",
+  "existing_MM_artifacts_modified": "NO",
+  "remaining_blockers": [],
+  "artifact_hashes": {
+    "23_confirmation_corpus_c1a/candidate_inventory/AQ2C1A_candidate_source_inventory.csv": "bc222add63b3c7b69b574dfa05f4d016e5378522a6eac5b5e2956ad69dc28ed4",
+    "23_confirmation_corpus_c1a/selection_audit/AQ2C1A_discovery_parent_exclusion.csv": "0ee6c0cfb62bfcfd98871af6e1d486e06caa4d578dab723abfec03a4f94e3395",
+    "23_confirmation_corpus_c1a/selection_audit/AQ2C1A_pcm_duplicate_audit.csv": "0f80b122f719d17fc043351c7eb0ec39aa8ba57079048b227207d0e9f737f887",
+    "23_confirmation_corpus_c1a/selection_audit/AQ2C1A_untouched_parent_audit.json": "5bfba5edca657a486945ebefdc85f46712e4825e1e3501c8a9e772ffe224bb0d",
+    "23_confirmation_corpus_c1a/AQ2C1A_confirmation_parent_manifest.csv": "8f5cace862a0066e7bc6c47e23816206dc9069d8841234186c20a747868e69d8",
+    "23_confirmation_corpus_c1a/AQ2C1A_confirmation_pcm_sha256s.txt": "f03a621d43c871ceb3e12273d9f91bf23a7946f0b4ddf191270f6216dcb00fca",
+    "24_rate_preflight_c1a/audit/AQ2C1A_rate_preflight.csv": "7bbc23cede67b72c2e0d20a8862b44a3df3a31e9c021e94612550e9cd9f614b5",
+    "24_rate_preflight_c1a/audit/AQ2C1A_rate_preflight_summary.json": "69e4846d17ad51a4bfe1e51843383c98325619df3495edcea5d8fb5f2cf9f6db",
+    "24_rate_preflight_c1a/audit/AQ2C1A_achieved_rate_summary.csv": "18d03232d3ccc41b6c253d464cb8b5ed34f87246977460079752808dbe237612",
+    "24_rate_preflight_c1a/audit/AQ2C1A_preflight_derivative_sha256s.txt": "d675cc279969e69c70c9b92bcec70dcb91cb932ebc8428acdf86e2eb5feb8b32",
+    "25_design_c1a/AQ2C1B_PROSPECTIVE_CONFIRMATION_SPEC.json": "cc65c5b616e03106dbccbadeb2be1a36bf0f66ecdd67700dc7e94ac3f9cf1a5f",
+    "logs_c1a/AQ2C1A_execution_script.py": "1a804345df6ca2cd0d9096f62912c2d5788a7f162ad85b63231d4c880b024f21"
+  }
+}

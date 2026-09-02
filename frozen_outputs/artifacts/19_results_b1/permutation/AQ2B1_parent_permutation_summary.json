@@ -1,0 +1,7 @@
+{
+  "permutation_reps": 10000,
+  "permutation_seed": 20260831,
+  "observed_balanced_accuracy": 0.392156862745098,
+  "null_ge_observed": 2026,
+  "one_sided_p_value": 0.20267973202679732
+}

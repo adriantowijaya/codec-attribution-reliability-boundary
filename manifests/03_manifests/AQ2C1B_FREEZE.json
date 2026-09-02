@@ -1,0 +1,524 @@
+{
+  "phase": "AQ-2C.1B",
+  "specification_version": "1.0",
+  "created_utc": "2026-08-31T11:55:40.537878+00:00",
+  "final_classification": "PASS_NEW_RATE_BOUNDARY_CONFIRMED",
+  "subclassification": "",
+  "AQ2C1A_freeze_sha256": "89c5810d538f60bc588ca54fa7f81e6dcdcab81e2509219cebeae7104b407fb9",
+  "prospective_confirmation_spec_sha256": "cc65c5b616e03106dbccbadeb2be1a36bf0f66ecdd67700dc7e94ac3f9cf1a5f",
+  "AQ2C1B_preprediction_freeze_sha256": "a9a19c65abbeed2dd8bcd7c1fdd8815511f10baa384a192d8132429c5e290c79",
+  "preconfirm_operational_lock_sha256": "25060c566d86d4636cae440743c25a860351aad0f0dcc53b11d76d67c2239bad",
+  "confirmation_parent_manifest_sha256": "8f5cace862a0066e7bc6c47e23816206dc9069d8841234186c20a747868e69d8",
+  "confirmation_parent_count": 60,
+  "parents_per_corpus": 20,
+  "discovery_overlap_count": 0,
+  "discovery_pcm_collision_count": 0,
+  "within_confirmation_pcm_duplicate_count": 0,
+  "codec_set": [
+    "AAC",
+    "MP3",
+    "Opus"
+  ],
+  "rate_grid": [
+    32,
+    48,
+    64,
+    80,
+    96,
+    128
+  ],
+  "new_probe_rates": [
+    48,
+    80,
+    96
+  ],
+  "discovery_replication_rate": 64,
+  "endpoint_rates": [
+    32,
+    128
+  ],
+  "expected_derivative_count": 1080,
+  "actual_derivative_count": 1080,
+  "encode_success_count": 1080,
+  "probe_success_count": 1080,
+  "decode_success_count": 1080,
+  "alignment_success_count": 1080,
+  "feature_success_count": 1080,
+  "clean_feature_success_count": 60,
+  "model_numeric_sha256": "7850e14a7231ac5d2d06a72c6c2eb487cedd7df32cf5750bf62ddda79932b5de",
+  "model_config_sha256": "495b976b5fe558faee6a374707e5629c04a8d8b844f5aea9d178259db5d1fdff",
+  "centroid_numeric_sha256": "b155a12e464c3293a79da0b72165441ede89e5845b95ef977b47580e163d983c",
+  "feature_spec_sha256": "83020402082b7168d88df8d1eb02fc4f254d24b6fbd4ab0770403d1f96c1acae",
+  "feature_extractor_sha256": "6c79cbc06c67c9cff140cd64de6f878ea59f1b1580bb7db0b0acb08a4a57da8f",
+  "model_refit_performed": "NO",
+  "new_training_performed": "NO",
+  "new_model_weights_created": "NO",
+  "prediction_count": 1080,
+  "endpoint_metrics": {
+    "BA_ENDPOINT_POOLED": 0.8416666666666667,
+    "AAC_RECALL_32": 0.9166666666666666,
+    "AAC_RECALL_128": 0.9,
+    "AAC_ENDPOINT_RECALL_FLOOR": 0.9,
+    "ENDPOINT_CONTROL_PASS": true,
+    "DOMAIN_SHIFT_SEVERE": false
+  },
+  "per_rate_metrics": {
+    "32": {
+      "balanced_accuracy": 0.8833333333333333,
+      "macro_f1": 0.8831573417571521,
+      "accuracy": 0.8833333333333333,
+      "per_codec_recall": {
+        "AAC": 0.9166666666666666,
+        "MP3": 0.8833333333333333,
+        "Opus": 0.85
+      },
+      "confusion_matrix": [
+        [
+          55,
+          2,
+          3
+        ],
+        [
+          3,
+          53,
+          4
+        ],
+        [
+          5,
+          4,
+          51
+        ]
+      ],
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ],
+      "n": 180
+    },
+    "48": {
+      "balanced_accuracy": 0.39444444444444443,
+      "macro_f1": 0.37599737047536874,
+      "accuracy": 0.39444444444444443,
+      "per_codec_recall": {
+        "AAC": 0.15,
+        "MP3": 0.2,
+        "Opus": 0.8333333333333334
+      },
+      "confusion_matrix": [
+        [
+          9,
+          30,
+          21
+        ],
+        [
+          46,
+          12,
+          2
+        ],
+        [
+          7,
+          3,
+          50
+        ]
+      ],
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ],
+      "n": 180
+    },
+    "64": {
+      "balanced_accuracy": 0.42777777777777776,
+      "macro_f1": 0.38892666086910693,
+      "accuracy": 0.42777777777777776,
+      "per_codec_recall": {
+        "AAC": 0.08333333333333333,
+        "MP3": 0.35,
+        "Opus": 0.85
+      },
+      "confusion_matrix": [
+        [
+          5,
+          44,
+          11
+        ],
+        [
+          22,
+          21,
+          17
+        ],
+        [
+          4,
+          5,
+          51
+        ]
+      ],
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ],
+      "n": 180
+    },
+    "80": {
+      "balanced_accuracy": 0.4444444444444445,
+      "macro_f1": 0.3878443661052356,
+      "accuracy": 0.4444444444444444,
+      "per_codec_recall": {
+        "AAC": 0.06666666666666667,
+        "MP3": 0.48333333333333334,
+        "Opus": 0.7833333333333333
+      },
+      "confusion_matrix": [
+        [
+          4,
+          38,
+          18
+        ],
+        [
+          8,
+          29,
+          23
+        ],
+        [
+          2,
+          11,
+          47
+        ]
+      ],
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ],
+      "n": 180
+    },
+    "96": {
+      "balanced_accuracy": 0.48888888888888893,
+      "macro_f1": 0.4342558276594824,
+      "accuracy": 0.4888888888888889,
+      "per_codec_recall": {
+        "AAC": 0.08333333333333333,
+        "MP3": 0.65,
+        "Opus": 0.7333333333333333
+      },
+      "confusion_matrix": [
+        [
+          5,
+          15,
+          40
+        ],
+        [
+          6,
+          39,
+          15
+        ],
+        [
+          3,
+          13,
+          44
+        ]
+      ],
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ],
+      "n": 180
+    },
+    "128": {
+      "balanced_accuracy": 0.8000000000000002,
+      "macro_f1": 0.798459563543004,
+      "accuracy": 0.8,
+      "per_codec_recall": {
+        "AAC": 0.9,
+        "MP3": 0.7,
+        "Opus": 0.8
+      },
+      "confusion_matrix": [
+        [
+          54,
+          3,
+          3
+        ],
+        [
+          6,
+          42,
+          12
+        ],
+        [
+          3,
+          9,
+          48
+        ]
+      ],
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ],
+      "n": 180
+    }
+  },
+  "AAC_rate_profile": {
+    "32": {
+      "recall": 0.9166666666666666,
+      "median_true_margin": 4.662424656832801,
+      "fraction_true_centroid_rank_1": 0.6,
+      "wrong_centroid_fraction": 0.4,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.6,
+      "median_clean_distance": 16.26072618839816,
+      "median_trajectory_alpha": null,
+      "fraction_within_endpoint_segment": null,
+      "median_normalized_trajectory_residual": null
+    },
+    "48": {
+      "recall": 0.15,
+      "median_true_margin": -3.245819457502583,
+      "fraction_true_centroid_rank_1": 0.31666666666666665,
+      "wrong_centroid_fraction": 0.6833333333333333,
+      "dominant_error_target": "MP3",
+      "dominant_error_share": 0.5882352941176471,
+      "median_clean_distance": 12.149107565158348,
+      "median_trajectory_alpha": 0.3786460292893332,
+      "fraction_within_endpoint_segment": 1.0,
+      "median_normalized_trajectory_residual": 0.43790295047714256
+    },
+    "64": {
+      "recall": 0.08333333333333333,
+      "median_true_margin": -3.8867135342785626,
+      "fraction_true_centroid_rank_1": 0.15,
+      "wrong_centroid_fraction": 0.85,
+      "dominant_error_target": "MP3",
+      "dominant_error_share": 0.8,
+      "median_clean_distance": 10.436592045936859,
+      "median_trajectory_alpha": 0.5205153036116993,
+      "fraction_within_endpoint_segment": 1.0,
+      "median_normalized_trajectory_residual": 0.4730370912285896
+    },
+    "80": {
+      "recall": 0.06666666666666667,
+      "median_true_margin": -4.01694799248491,
+      "fraction_true_centroid_rank_1": 0.16666666666666666,
+      "wrong_centroid_fraction": 0.8333333333333334,
+      "dominant_error_target": "MP3",
+      "dominant_error_share": 0.6785714285714286,
+      "median_clean_distance": 9.721719737063143,
+      "median_trajectory_alpha": 0.5898676918403196,
+      "fraction_within_endpoint_segment": 1.0,
+      "median_normalized_trajectory_residual": 0.47596620293920205
+    },
+    "96": {
+      "recall": 0.08333333333333333,
+      "median_true_margin": -5.303075273499484,
+      "fraction_true_centroid_rank_1": 0.16666666666666666,
+      "wrong_centroid_fraction": 0.8333333333333334,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.7272727272727273,
+      "median_clean_distance": 8.117731551667434,
+      "median_trajectory_alpha": 0.7246632941742901,
+      "fraction_within_endpoint_segment": 0.9833333333333333,
+      "median_normalized_trajectory_residual": 0.4635465716247475
+    },
+    "128": {
+      "recall": 0.9,
+      "median_true_margin": 8.479375511368929,
+      "fraction_true_centroid_rank_1": 0.45,
+      "wrong_centroid_fraction": 0.55,
+      "dominant_error_target": "MP3",
+      "dominant_error_share": 0.5,
+      "median_clean_distance": 6.282462253219327,
+      "median_trajectory_alpha": null,
+      "fraction_within_endpoint_segment": null,
+      "median_normalized_trajectory_residual": null
+    }
+  },
+  "parent_bootstrap_summary": {
+    "48": {
+      "seed": 20260949,
+      "replicates": 10000,
+      "p2_5": 0.6583333333333333,
+      "p50": 0.7583333333333333,
+      "p97_5": 0.85,
+      "PAIRED_DROP_STABLE": true
+    },
+    "64": {
+      "seed": 20260965,
+      "replicates": 10000,
+      "p2_5": 0.7333333333333333,
+      "p50": 0.825,
+      "p97_5": 0.9083333333333333,
+      "PAIRED_DROP_STABLE": true
+    },
+    "80": {
+      "seed": 20260981,
+      "replicates": 10000,
+      "p2_5": 0.7583333333333333,
+      "p50": 0.8416666666666667,
+      "p97_5": 0.9166666666666666,
+      "PAIRED_DROP_STABLE": true
+    },
+    "96": {
+      "seed": 20260997,
+      "replicates": 10000,
+      "p2_5": 0.7333333333333333,
+      "p50": 0.825,
+      "p97_5": 0.9083333333333333,
+      "PAIRED_DROP_STABLE": true
+    }
+  },
+  "multi_corpus_summary": {
+    "48": {
+      "corpus_degradation": {
+        "Orchset": true,
+        "IRMAS": true,
+        "FSDnoisy18k": true
+      },
+      "true_count": 3,
+      "MULTI_CORPUS_CONFIRMATION": true
+    },
+    "80": {
+      "corpus_degradation": {
+        "Orchset": true,
+        "IRMAS": true,
+        "FSDnoisy18k": true
+      },
+      "true_count": 3,
+      "MULTI_CORPUS_CONFIRMATION": true
+    },
+    "96": {
+      "corpus_degradation": {
+        "Orchset": true,
+        "IRMAS": true,
+        "FSDnoisy18k": true
+      },
+      "true_count": 3,
+      "MULTI_CORPUS_CONFIRMATION": true
+    }
+  },
+  "new_rate_structural_events": {
+    "48": false,
+    "80": true,
+    "96": true
+  },
+  "full_new_rate_boundary_events": {
+    "48": false,
+    "80": true,
+    "96": true
+  },
+  "replication_64": true,
+  "final_confirmation_gate": {
+    "ENDPOINT": {
+      "BA_ENDPOINT_POOLED": 0.8416666666666667,
+      "AAC_RECALL_32": 0.9166666666666666,
+      "AAC_RECALL_128": 0.9,
+      "AAC_ENDPOINT_RECALL_FLOOR": 0.9,
+      "ENDPOINT_CONTROL_PASS": true,
+      "DOMAIN_SHIFT_SEVERE": false
+    },
+    "48": {
+      "AAC_RECALL": 0.15,
+      "AAC_RECALL_DROP": 0.75,
+      "AAC_MEDIAN_TRUE_MARGIN": -3.245819457502583,
+      "AAC_WRONG_CENTROID_FRACTION": 0.6833333333333333,
+      "AAC_DOMINANT_ERROR_TARGET": "MP3",
+      "AAC_DOMINANT_ERROR_SHARE": 0.5882352941176471,
+      "NEW_RATE_STRUCTURAL_EVENT": false,
+      "PAIRED_DROP_BOOTSTRAP_LOW": 0.6583333333333333,
+      "PAIRED_DROP_BOOTSTRAP_MEDIAN": 0.7583333333333333,
+      "PAIRED_DROP_BOOTSTRAP_HIGH": 0.85,
+      "PAIRED_DROP_STABLE": true,
+      "MULTI_CORPUS_TRUE_COUNT": 3,
+      "MULTI_CORPUS_CONFIRMATION": true,
+      "FULL_NEW_RATE_BOUNDARY_EVENT": false
+    },
+    "80": {
+      "AAC_RECALL": 0.06666666666666667,
+      "AAC_RECALL_DROP": 0.8333333333333334,
+      "AAC_MEDIAN_TRUE_MARGIN": -4.01694799248491,
+      "AAC_WRONG_CENTROID_FRACTION": 0.8333333333333334,
+      "AAC_DOMINANT_ERROR_TARGET": "MP3",
+      "AAC_DOMINANT_ERROR_SHARE": 0.6785714285714286,
+      "NEW_RATE_STRUCTURAL_EVENT": true,
+      "PAIRED_DROP_BOOTSTRAP_LOW": 0.7583333333333333,
+      "PAIRED_DROP_BOOTSTRAP_MEDIAN": 0.8416666666666667,
+      "PAIRED_DROP_BOOTSTRAP_HIGH": 0.9166666666666666,
+      "PAIRED_DROP_STABLE": true,
+      "MULTI_CORPUS_TRUE_COUNT": 3,
+      "MULTI_CORPUS_CONFIRMATION": true,
+      "FULL_NEW_RATE_BOUNDARY_EVENT": true
+    },
+    "96": {
+      "AAC_RECALL": 0.08333333333333333,
+      "AAC_RECALL_DROP": 0.8166666666666667,
+      "AAC_MEDIAN_TRUE_MARGIN": -5.303075273499484,
+      "AAC_WRONG_CENTROID_FRACTION": 0.8333333333333334,
+      "AAC_DOMINANT_ERROR_TARGET": "Opus",
+      "AAC_DOMINANT_ERROR_SHARE": 0.7272727272727273,
+      "NEW_RATE_STRUCTURAL_EVENT": true,
+      "PAIRED_DROP_BOOTSTRAP_LOW": 0.7333333333333333,
+      "PAIRED_DROP_BOOTSTRAP_MEDIAN": 0.825,
+      "PAIRED_DROP_BOOTSTRAP_HIGH": 0.9083333333333333,
+      "PAIRED_DROP_STABLE": true,
+      "MULTI_CORPUS_TRUE_COUNT": 3,
+      "MULTI_CORPUS_CONFIRMATION": true,
+      "FULL_NEW_RATE_BOUNDARY_EVENT": true
+    },
+    "64": {
+      "AAC_RECALL_64": 0.08333333333333333,
+      "AAC_RECALL_DROP_64": 0.8166666666666667,
+      "AAC_MEDIAN_TRUE_MARGIN_64": -3.8867135342785626,
+      "AAC_WRONG_CENTROID_FRACTION_64": 0.85,
+      "PAIRED_DROP_BOOTSTRAP_LOW_64": 0.7333333333333333,
+      "PAIRED_DROP_STABLE_64": true,
+      "REPLICATION_64": true
+    },
+    "final_classification": "PASS_NEW_RATE_BOUNDARY_CONFIRMED",
+    "interpretation_boundary": "Under the frozen blind family-attribution probe, configuration-conditioned family-identifiability instability independently recurred on previously untouched source parents and at least one previously unseen operating-rate condition."
+  },
+  "scientific_confirmation_result_produced": "YES",
+  "vorbis_used": "NO",
+  "representation_B_used": "NO",
+  "AQ2A_v1_frozen_artifacts_modified": "NO",
+  "AQ2A_R1_frozen_artifacts_modified": "NO",
+  "AQ2A_R2_frozen_artifacts_modified": "NO",
+  "AQ2B0_frozen_artifacts_modified": "NO",
+  "AQ2B1_frozen_artifacts_modified": "NO",
+  "AQ2B1_DX_frozen_artifacts_modified": "NO",
+  "AQ2C1A_frozen_artifacts_modified": "NO",
+  "existing_MM_artifacts_modified": "NO",
+  "remaining_blockers": [],
+  "artifact_hashes": {
+    "27_confirmation_derivatives_c1b/AQ2C1B_derivative_manifest.csv": "00039f7210b6cba43943904cd3da8caef9c6691da1f6f95beb8c1bb7e7063c47",
+    "27_confirmation_derivatives_c1b/AQ2C1B_derivative_file_sha256s.txt": "2b46b5b2564a79e316d28f22a73b2de7844a83c7767264f9ca0e80b51fc395da",
+    "27_confirmation_derivatives_c1b/audit/AQ2C1B_collision_audit.csv": "24650c802d44b13e9ac9adfed60f47f5773b53a6864e574a39f226fc1239790e",
+    "27_confirmation_derivatives_c1b/audit/AQ2C1B_achieved_rate_summary.csv": "a8ce91bba4af305da28bf25104f64b7fecd68c2eb27d08a67c526424ec4d812f",
+    "28_confirmation_features_c1b/AQ2C1B_feature_manifest.csv": "d9b58dec13544757049727d3624a8f96bdc59fc263150e45fbf9b0c02fd4f517",
+    "28_confirmation_features_c1b/AQ2C1B_clean_feature_manifest.csv": "5d4f3626dff4a0802a6a869837e155866af2d4b89a9d688a79628464335e6a96",
+    "28_confirmation_features_c1b/AQ2C1B_feature_file_sha256s.txt": "c9b91bf74745cf222400865adcf18a7af8344e81832f7ae6d3861c1dad155134",
+    "29_reference_c1b/centroids/AQ2C1B_B1_train_centroids.npz": "b155a12e464c3293a79da0b72165441ede89e5845b95ef977b47580e163d983c",
+    "29_reference_c1b/operational_lock/AQ2C1B_OPERATIONAL_METRIC_SPEC.json": "543d39224ae9d95fe89907a0cee9bdbd7eebd8b801d6363bceb7c1515e82f943",
+    "29_reference_c1b/operational_lock/AQ2C1B_PRECONFIRM_OPERATIONAL_LOCK.json": "25060c566d86d4636cae440743c25a860351aad0f0dcc53b11d76d67c2239bad",
+    "29_reference_c1b/integrity/AQ2C1B_centroid_reproduction_audit.json": "1fdd7205d4ea3a0e7a7d344f81db9a9db2c22d21ed46894e3edbbfb8cab6be62",
+    "29_reference_c1b/integrity/AQ2C1B_model_numeric_reproduction_audit.csv": "057ff58eab7c3ec65ed391fadfcf0fa332cb98f3ca6731fb3605597d58436b66",
+    "30_results_c1b/predictions/AQ2C1B_all_predictions.csv": "49d9c91231d2afeb22f4b1c9d49c0b63f0943a18f59b31dbf17b75f6ecb7f0b5",
+    "30_results_c1b/per_rate/AQ2C1B_per_rate_metrics.json": "5b30ea249a0d0f9eee84e77db03ddde3f397769500e92c6cc7033bc44210ebff",
+    "30_results_c1b/per_rate/AQ2C1B_per_codec_rate_summary.csv": "fdcf1c8a9960f4ed9e376b7a7824662a87542bf957dc2665bdf47a585120a539",
+    "30_results_c1b/bootstrap/AQ2C1B_AAC_parent_bootstrap_summary.json": "9430fddb491a2db9b99e2418d163bf9363d4bf98971b0f47353dc129ed1539ea",
+    "30_results_c1b/corpus/AQ2C1B_AAC_corpus_rate_summary.csv": "c7fc5b65c4c22a16e0b376e5efa0bced477cf4aaa3cef424890d7fa052d10a4c",
+    "30_results_c1b/corpus/AQ2C1B_multi_corpus_gate.json": "a2fb9bbf0ab8a026d41ef9f6ca2385b4c91ea99a1cdc1e85e908c2827679ad46",
+    "30_results_c1b/geometry/AQ2C1B_clean_distance.csv": "18c8a2f9b4c7ce2601f1ba8a5ec2c11411c0412534a58cbd09969ecd8e082ee6",
+    "30_results_c1b/geometry/AQ2C1B_endpoint_trajectory_geometry.csv": "f0643e0d72d79b8da2720e96adf2950f084bd290f06e1eb7da19300599ec89b4",
+    "30_results_c1b/gate/AQ2C1B_confirmation_gate.json": "f8198dea17f4b84f165ad67f2f035dd3166c6fe5a04e3a297b1097da3fd083a0",
+    "30_results_c1b/gate/AQ2C1B_confirmation_summary.json": "7481021151676ff084f2562addedf765a752625b277fd95d3a1ad6825a12b275",
+    "03_manifests/AQ2C1B_PREPREDICTION_FREEZE.json": "a9a19c65abbeed2dd8bcd7c1fdd8815511f10baa384a192d8132429c5e290c79",
+    "logs_c1b/AQ2C1B_execution_script.py": "c0cd0be166e4eb3e765930e8fcb3c31a3982d67d3fd022fc16ce12492d9e2139",
+    "30_results_c1b/bootstrap/AQ2C1B_AAC_parent_bootstrap_48.csv": "038e9e979cc86d3b88ca3f223ea8771edb326184a81f4b4d21e53b875fc64381",
+    "30_results_c1b/bootstrap/AQ2C1B_AAC_parent_bootstrap_64.csv": "2b2f17878026007d3639ac39b60cf22a41d466b4c4d8a299a71e52f58b4a9519",
+    "30_results_c1b/bootstrap/AQ2C1B_AAC_parent_bootstrap_80.csv": "bec8dc16996ce12207f37bb1a4acac38d0e3ddba428d31b0cbb7b470defa508b",
+    "30_results_c1b/bootstrap/AQ2C1B_AAC_parent_bootstrap_96.csv": "c3239f00908e406d02bf7d472208c1a32f2cd7d36f1027848e2d6ee13404a06a"
+  }
+}

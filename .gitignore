@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+verification/
+.env
+*.zip
+*.py[cod]
+.pytest_cache/
+.env.*
+*.token
+credentials/
+secrets/
+.DS_Store
+Thumbs.db

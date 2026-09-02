@@ -1,0 +1,26 @@
+{
+  "class_order": [
+    "AAC",
+    "MP3",
+    "Opus"
+  ],
+  "fit_scope": "B1_TRAIN_MFCC_ONLY",
+  "model": {
+    "C": 1.0,
+    "max_iter": 5000,
+    "multi_class": "multinomial",
+    "penalty": "l2",
+    "solver": "lbfgs",
+    "tol": 1e-08,
+    "type": "LogisticRegression"
+  },
+  "representation_id": "MFCC_STATISTICS_V1",
+  "scaler": {
+    "type": "StandardScaler",
+    "with_mean": true,
+    "with_std": true
+  },
+  "sklearn_version": "1.5.1",
+  "training_parents": 49,
+  "training_rows": 294
+}

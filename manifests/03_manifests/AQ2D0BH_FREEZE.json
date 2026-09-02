@@ -1,0 +1,224 @@
+{
+  "AQ2A_R1_frozen_artifacts_modified": "NO",
+  "AQ2A_R2_frozen_artifacts_modified": "NO",
+  "AQ2A_v1_frozen_artifacts_modified": "NO",
+  "AQ2B0_frozen_artifacts_modified": "NO",
+  "AQ2B1_DX_frozen_artifacts_modified": "NO",
+  "AQ2B1_frozen_artifacts_modified": "NO",
+  "AQ2C1A_frozen_artifacts_modified": "NO",
+  "AQ2C1B_frozen_artifacts_modified": "NO",
+  "AQ2C2_DX_frozen_artifacts_modified": "NO",
+  "AQ2C2_frozen_artifacts_modified": "NO",
+  "B1_model_refit_performed": "NO",
+  "BH_R2_authorized": "NO",
+  "C1B_data_used_for_training": "NO",
+  "C1B_result_changed": "NO",
+  "C2_DX_result_changed": "NO",
+  "C2_data_used_for_training": "NO",
+  "C2_result_changed": "NO",
+  "CONTENT_BREADTH_STRONG": false,
+  "CONTENT_DOMAIN_DEPENDENCE_SIGNAL": false,
+  "MFCC_full_events_80_96": {
+    "80": {
+      "AAC_DOMINANT_ERROR_SHARE": 1.0,
+      "AAC_DOMINANT_ERROR_TARGET": "MP3",
+      "AAC_MEDIAN_TRUE_MARGIN": -5.4264163888856505,
+      "AAC_RECALL": 0.0,
+      "AAC_RECALL_DROP": 0.0,
+      "AAC_WRONG_CENTROID_FRACTION": 1.0,
+      "BOOTSTRAP_HIGH": 0.0,
+      "BOOTSTRAP_LOW": 0.0,
+      "BOOTSTRAP_MEDIAN": 0.0,
+      "FULL_MFCC_SPEECH_EVENT": false,
+      "PAIRED_DROP_STABLE": false,
+      "STRUCTURAL_EVENT": false
+    },
+    "96": {
+      "AAC_DOMINANT_ERROR_SHARE": 1.0,
+      "AAC_DOMINANT_ERROR_TARGET": "MP3",
+      "AAC_MEDIAN_TRUE_MARGIN": -5.490136453918527,
+      "AAC_RECALL": 0.0,
+      "AAC_RECALL_DROP": 0.0,
+      "AAC_WRONG_CENTROID_FRACTION": 1.0,
+      "BOOTSTRAP_HIGH": 0.0,
+      "BOOTSTRAP_LOW": 0.0,
+      "BOOTSTRAP_MEDIAN": 0.0,
+      "FULL_MFCC_SPEECH_EVENT": false,
+      "PAIRED_DROP_STABLE": false,
+      "STRUCTURAL_EVENT": false
+    }
+  },
+  "MFCC_representation_identity": "MFCC_STATISTICS_V1",
+  "MFCC_speech_endpoint_metrics": {
+    "AAC_RECALL_128": 0.0,
+    "AAC_RECALL_32": 0.0,
+    "BA": 0.39166666666666666,
+    "MFCC_SPEECH_ENDPOINT_PASS": false,
+    "MFCC_SPEECH_ENDPOINT_SEVERE_FAIL": true,
+    "per_codec_recall": {
+      "AAC": 0.0,
+      "MP3": 1.0,
+      "Opus": 0.175
+    }
+  },
+  "MFCC_validation_competent": true,
+  "MFCC_validation_metrics": {
+    "AAC_RECALL_128": 0.8125,
+    "AAC_RECALL_32": 1.0,
+    "BA": 0.8333333333333334,
+    "MFCC_VALIDATION_COMPETENT": true,
+    "per_codec_recall": {
+      "AAC": 0.90625,
+      "MP3": 0.75,
+      "Opus": 0.84375
+    }
+  },
+  "MODEL_BREADTH_STRONG": false,
+  "MODEL_DEPENDENCE_SIGNAL": false,
+  "REPRESENTATION_BREADTH_STRONG": false,
+  "REPRESENTATION_DEPENDENCE_SIGNAL": false,
+  "RF_full_events_80_96": {
+    "80": {
+      "AAC_DOMINANT_ERROR_SHARE": 0.975,
+      "AAC_DOMINANT_ERROR_TARGET": "MP3",
+      "AAC_MEDIAN_TRUE_MARGIN": -0.471,
+      "AAC_RECALL": 0.0,
+      "AAC_RECALL_DROP": 0.0,
+      "AAC_WRONG_CENTROID_FRACTION": 1.0,
+      "BOOTSTRAP_HIGH": 0.1125,
+      "BOOTSTRAP_LOW": 0.0125,
+      "BOOTSTRAP_MEDIAN": 0.0625,
+      "FULL_RF_SPEECH_EVENT": false,
+      "PAIRED_DROP_STABLE": true,
+      "STRUCTURAL_EVENT": false
+    },
+    "96": {
+      "AAC_DOMINANT_ERROR_SHARE": 0.925,
+      "AAC_DOMINANT_ERROR_TARGET": "MP3",
+      "AAC_MEDIAN_TRUE_MARGIN": -0.447,
+      "AAC_RECALL": 0.0,
+      "AAC_RECALL_DROP": 0.0,
+      "AAC_WRONG_CENTROID_FRACTION": 1.0,
+      "BOOTSTRAP_HIGH": 0.1125,
+      "BOOTSTRAP_LOW": 0.0125,
+      "BOOTSTRAP_MEDIAN": 0.0625,
+      "FULL_RF_SPEECH_EVENT": false,
+      "PAIRED_DROP_STABLE": true,
+      "STRUCTURAL_EVENT": false
+    }
+  },
+  "RF_speech_endpoint_metrics": {
+    "AAC_RECALL_128": 0.0,
+    "AAC_RECALL_32": 0.125,
+    "BA": 0.3541666666666667,
+    "RF_SPEECH_ENDPOINT_PASS": false,
+    "RF_SPEECH_ENDPOINT_SEVERE_FAIL": true,
+    "per_codec_recall": {
+      "AAC": 0.0625,
+      "MP3": 1.0,
+      "Opus": 0.0
+    }
+  },
+  "RF_validation_competent": true,
+  "RF_validation_metrics": {
+    "AAC_RECALL_128": 1.0,
+    "AAC_RECALL_32": 1.0,
+    "BA": 0.9479166666666666,
+    "RF_VALIDATION_COMPETENT": true,
+    "per_codec_recall": {
+      "AAC": 1.0,
+      "MP3": 0.875,
+      "Opus": 0.96875
+    }
+  },
+  "actual_derivatives": 480,
+  "alignment_success": 480,
+  "archive_md5": "32fa31d27d2e1cad72775fee3f4849a9",
+  "archive_sha256": "39fde525e59672dc6d1551919b1478f724438a95aa55f874b576be21967e6c23",
+  "artifact_hashes": {
+    "03_manifests/AQ2D0BH_ARM_FREEZE.json": "ccc2b257c88737082e0733d3ad4a5d3a78a2bf2dd3e0da86de0664d3bd9defa5",
+    "03_manifests/AQ2D0BH_DESIGN_FREEZE.json": "67e393b4e43d03fe1ba4fada3193125d1ddeb981daebbfee477834cb5103e9bf",
+    "03_manifests/AQ2D0BH_PREPREDICTION_FREEZE.json": "03dcddb5867a9fef36da74f0fd4f0a20fbfd824483ab4d5dd53f3d070a92903a"
+  },
+  "codec_set": [
+    "AAC",
+    "MP3",
+    "Opus"
+  ],
+  "created_utc": "2026-08-31T16:47:38.112517+00:00",
+  "decode_success": 480,
+  "encode_success": 480,
+  "existing_MM_artifacts_modified": "NO",
+  "expected_derivatives": 480,
+  "external_corpus": "LibriSpeech test-clean",
+  "final_Q1_breadth_scorecard": {
+    "CONTENT_BREADTH": "MODERATE / UNRESOLVED: endpoint incompetent on external speech domain",
+    "MODEL_BREADTH": "LIMITED / UNRESOLVED: RF validation or speech/event prerequisite not satisfied",
+    "REPRESENTATION_BREADTH": "LIMITED / UNRESOLVED: MFCC validation or speech/event prerequisite not satisfied"
+  },
+  "final_classification": "BREADTH_PROBES_INADEQUATE",
+  "license": "CC BY 4.0",
+  "new_training_performed": {
+    "MFCC_LR": "YES",
+    "RF": "YES"
+  },
+  "phase": "AQ-2D.0-BH",
+  "primary_full_events_80_96": {
+    "80": {
+      "AAC_DOMINANT_ERROR_SHARE": 1.0,
+      "AAC_DOMINANT_ERROR_TARGET": "MP3",
+      "AAC_MEDIAN_TRUE_MARGIN": -5.641540712897141,
+      "AAC_RECALL": 0.0,
+      "AAC_RECALL_DROP": 0.05,
+      "AAC_WRONG_CENTROID_FRACTION": 1.0,
+      "BOOTSTRAP_HIGH": 0.175,
+      "BOOTSTRAP_LOW": 0.025,
+      "BOOTSTRAP_MEDIAN": 0.0875,
+      "FULL_PRIMARY_SPEECH_EVENT": false,
+      "PAIRED_DROP_STABLE": true,
+      "STRUCTURAL_EVENT": false
+    },
+    "96": {
+      "AAC_DOMINANT_ERROR_SHARE": 1.0,
+      "AAC_DOMINANT_ERROR_TARGET": "MP3",
+      "AAC_MEDIAN_TRUE_MARGIN": -5.633197938864387,
+      "AAC_RECALL": 0.0,
+      "AAC_RECALL_DROP": 0.05,
+      "AAC_WRONG_CENTROID_FRACTION": 1.0,
+      "BOOTSTRAP_HIGH": 0.175,
+      "BOOTSTRAP_LOW": 0.025,
+      "BOOTSTRAP_MEDIAN": 0.0875,
+      "FULL_PRIMARY_SPEECH_EVENT": false,
+      "PAIRED_DROP_STABLE": true,
+      "STRUCTURAL_EVENT": false
+    }
+  },
+  "primary_model_identity": "AQ2B1 frozen Representation-A LogisticRegression",
+  "primary_speech_endpoint_metrics": {
+    "AAC_RECALL_128": 0.125,
+    "AAC_RECALL_32": 0.05,
+    "BA": 0.3708333333333333,
+    "PRIMARY_SPEECH_ENDPOINT_PASS": false,
+    "PRIMARY_SPEECH_ENDPOINT_SEVERE_FAIL": true,
+    "per_codec_recall": {
+      "AAC": 0.0875,
+      "MP3": 1.0,
+      "Opus": 0.025
+    }
+  },
+  "probe_success": 480,
+  "rate_grid": [
+    32,
+    80,
+    96,
+    128
+  ],
+  "representation_B_used": "NO",
+  "representation_C_rescue_used": "NO",
+  "specification_version": "v1.0",
+  "speech_data_used_for_training": "NO",
+  "speech_parent_count": 40,
+  "speech_parent_manifest_sha256": "343ff52d584e16ef65406b3061f17647d9cf0fc24544b516dbcea77ea82386c0",
+  "unique_speaker_count": 40,
+  "vorbis_used": "NO"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "observed": {
+    "AAC": {
+      "mid_fraction_rank_1": 0.0,
+      "mid_fraction_wrong_closer": 1.0
+    },
+    "MP3": {
+      "mid_fraction_rank_1": 0.35294117647058826,
+      "mid_fraction_wrong_closer": 0.6470588235294118
+    },
+    "Opus": {
+      "mid_fraction_rank_1": 0.7647058823529411,
+      "mid_fraction_wrong_closer": 0.23529411764705882
+    }
+  }
+}

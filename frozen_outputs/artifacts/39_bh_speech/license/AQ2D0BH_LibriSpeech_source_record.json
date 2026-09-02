@@ -1,0 +1,12 @@
+{
+  "archive_sha256": "39fde525e59672dc6d1551919b1478f724438a95aa55f874b576be21967e6c23",
+  "canonical_source_url": "https://www.openslr.org/resources/12/test-clean.tar.gz",
+  "external_corpus": "LibriSpeech ASR corpus",
+  "file_size_bytes": 346663984,
+  "license": "CC BY 4.0",
+  "observed_md5": "32fa31d27d2e1cad72775fee3f4849a9",
+  "official_archive_name": "test-clean.tar.gz",
+  "official_expected_md5": "32fa31d27d2e1cad72775fee3f4849a9",
+  "resource": "OpenSLR SLR12",
+  "subset": "test-clean"
+}

@@ -1,0 +1,12 @@
+{
+  "centroid_definition": "Mean standardized B1 TRAIN Representation-A vectors per true codec.",
+  "standardization": "Frozen B1 scaler_mean and scaler_scale only; no refit.",
+  "distance_metric": "Euclidean L2",
+  "wrong_centroid_closer_rule": "D_WRONG_MIN < D_TRUE, strict inequality; ties are not wrong.",
+  "true_centroid_rank_rule": "1 + number of wrong-codec centroids with distance strictly less than D_TRUE",
+  "class_order": [
+    "AAC",
+    "MP3",
+    "Opus"
+  ]
+}

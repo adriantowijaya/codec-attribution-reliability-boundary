@@ -1,0 +1,424 @@
+{
+  "C2_parent_count": 60,
+  "parents_by_corpus": {
+    "FSDnoisy18k": 20,
+    "IRMAS": 20,
+    "Orchset": 20
+  },
+  "rate_grid": [
+    32,
+    48,
+    64,
+    80,
+    96,
+    128
+  ],
+  "codec_set": [
+    "AAC",
+    "MP3",
+    "Opus"
+  ],
+  "per_rate": {
+    "32": {
+      "balanced_accuracy": 0.6944444444444445,
+      "macro_f1": 0.6943044426005335,
+      "accuracy": 0.6944444444444444,
+      "per_codec_recall": {
+        "AAC": 0.6,
+        "MP3": 0.7666666666666667,
+        "Opus": 0.7166666666666667
+      },
+      "confusion_matrix": [
+        [
+          36,
+          6,
+          18
+        ],
+        [
+          8,
+          46,
+          6
+        ],
+        [
+          11,
+          6,
+          43
+        ]
+      ],
+      "n": 180,
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ]
+    },
+    "48": {
+      "balanced_accuracy": 0.4444444444444445,
+      "macro_f1": 0.4077039812392725,
+      "accuracy": 0.4444444444444444,
+      "per_codec_recall": {
+        "AAC": 0.5,
+        "MP3": 0.11666666666666667,
+        "Opus": 0.7166666666666667
+      },
+      "confusion_matrix": [
+        [
+          30,
+          5,
+          25
+        ],
+        [
+          44,
+          7,
+          9
+        ],
+        [
+          8,
+          9,
+          43
+        ]
+      ],
+      "n": 180,
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ]
+    },
+    "64": {
+      "balanced_accuracy": 0.43333333333333335,
+      "macro_f1": 0.4149735683540367,
+      "accuracy": 0.43333333333333335,
+      "per_codec_recall": {
+        "AAC": 0.45,
+        "MP3": 0.21666666666666667,
+        "Opus": 0.6333333333333333
+      },
+      "confusion_matrix": [
+        [
+          27,
+          9,
+          24
+        ],
+        [
+          23,
+          13,
+          24
+        ],
+        [
+          14,
+          8,
+          38
+        ]
+      ],
+      "n": 180,
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ]
+    },
+    "80": {
+      "balanced_accuracy": 0.45,
+      "macro_f1": 0.43769132977370967,
+      "accuracy": 0.45,
+      "per_codec_recall": {
+        "AAC": 0.45,
+        "MP3": 0.26666666666666666,
+        "Opus": 0.6333333333333333
+      },
+      "confusion_matrix": [
+        [
+          27,
+          5,
+          28
+        ],
+        [
+          20,
+          16,
+          24
+        ],
+        [
+          8,
+          14,
+          38
+        ]
+      ],
+      "n": 180,
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ]
+    },
+    "96": {
+      "balanced_accuracy": 0.5277777777777778,
+      "macro_f1": 0.5261029714621948,
+      "accuracy": 0.5277777777777778,
+      "per_codec_recall": {
+        "AAC": 0.55,
+        "MP3": 0.43333333333333335,
+        "Opus": 0.6
+      },
+      "confusion_matrix": [
+        [
+          33,
+          6,
+          21
+        ],
+        [
+          19,
+          26,
+          15
+        ],
+        [
+          13,
+          11,
+          36
+        ]
+      ],
+      "n": 180,
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ]
+    },
+    "128": {
+      "balanced_accuracy": 0.5222222222222223,
+      "macro_f1": 0.5171537204625439,
+      "accuracy": 0.5222222222222223,
+      "per_codec_recall": {
+        "AAC": 0.5666666666666667,
+        "MP3": 0.38333333333333336,
+        "Opus": 0.6166666666666667
+      },
+      "confusion_matrix": [
+        [
+          34,
+          8,
+          18
+        ],
+        [
+          22,
+          23,
+          15
+        ],
+        [
+          12,
+          11,
+          37
+        ]
+      ],
+      "n": 180,
+      "class_order": [
+        "AAC",
+        "MP3",
+        "Opus"
+      ]
+    }
+  },
+  "AAC_rate_profile": {
+    "32": {
+      "codec": "AAC",
+      "nominal_rate_kbps": 32,
+      "n": 60,
+      "recall": 0.6,
+      "median_TRUE_MARGIN": 0.621227220429237,
+      "fraction_TRUE_MARGIN_gt_0": 0.6,
+      "fraction_TRUE_CENTROID_RANK_1": 0.8666666666666667,
+      "fraction_WRONG_CENTROID_CLOSER": 0.13333333333333333,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.75
+    },
+    "48": {
+      "codec": "AAC",
+      "nominal_rate_kbps": 48,
+      "n": 60,
+      "recall": 0.5,
+      "median_TRUE_MARGIN": 0.014754384787553726,
+      "fraction_TRUE_MARGIN_gt_0": 0.5,
+      "fraction_TRUE_CENTROID_RANK_1": 0.6833333333333333,
+      "fraction_WRONG_CENTROID_CLOSER": 0.31666666666666665,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.8333333333333334
+    },
+    "64": {
+      "codec": "AAC",
+      "nominal_rate_kbps": 64,
+      "n": 60,
+      "recall": 0.45,
+      "median_TRUE_MARGIN": -0.08204114808759737,
+      "fraction_TRUE_MARGIN_gt_0": 0.45,
+      "fraction_TRUE_CENTROID_RANK_1": 0.6,
+      "fraction_WRONG_CENTROID_CLOSER": 0.4,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.7272727272727273
+    },
+    "80": {
+      "codec": "AAC",
+      "nominal_rate_kbps": 80,
+      "n": 60,
+      "recall": 0.45,
+      "median_TRUE_MARGIN": -0.3544467329767184,
+      "fraction_TRUE_MARGIN_gt_0": 0.45,
+      "fraction_TRUE_CENTROID_RANK_1": 0.5166666666666667,
+      "fraction_WRONG_CENTROID_CLOSER": 0.48333333333333334,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.8484848484848485
+    },
+    "96": {
+      "codec": "AAC",
+      "nominal_rate_kbps": 96,
+      "n": 60,
+      "recall": 0.55,
+      "median_TRUE_MARGIN": 0.18398624717461218,
+      "fraction_TRUE_MARGIN_gt_0": 0.55,
+      "fraction_TRUE_CENTROID_RANK_1": 0.45,
+      "fraction_WRONG_CENTROID_CLOSER": 0.55,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.7777777777777778
+    },
+    "128": {
+      "codec": "AAC",
+      "nominal_rate_kbps": 128,
+      "n": 60,
+      "recall": 0.5666666666666667,
+      "median_TRUE_MARGIN": 0.3795261783179995,
+      "fraction_TRUE_MARGIN_gt_0": 0.5666666666666667,
+      "fraction_TRUE_CENTROID_RANK_1": 0.48333333333333334,
+      "fraction_WRONG_CENTROID_CLOSER": 0.5166666666666667,
+      "dominant_error_target": "Opus",
+      "dominant_error_share": 0.6923076923076923
+    }
+  },
+  "bootstrap_summary": {
+    "48": {
+      "seed": 20261049,
+      "p2_5": -0.05,
+      "p50": 0.08333333333333333,
+      "p97_5": 0.21666666666666667,
+      "C2_PAIRED_DROP_STABLE": false,
+      "replicates": 10000
+    },
+    "64": {
+      "seed": 20261065,
+      "p2_5": 0.025,
+      "p50": 0.13333333333333333,
+      "p97_5": 0.25,
+      "C2_PAIRED_DROP_STABLE": true,
+      "replicates": 10000
+    },
+    "80": {
+      "seed": 20261081,
+      "p2_5": 0.016666666666666666,
+      "p50": 0.13333333333333333,
+      "p97_5": 0.25,
+      "C2_PAIRED_DROP_STABLE": true,
+      "replicates": 10000
+    },
+    "96": {
+      "seed": 20261097,
+      "p2_5": -0.09166666666666666,
+      "p50": 0.03333333333333333,
+      "p97_5": 0.15833333333333333,
+      "C2_PAIRED_DROP_STABLE": false,
+      "replicates": 10000
+    }
+  },
+  "multi_corpus_summary": {
+    "48": {
+      "corpus_degradation": {
+        "Orchset": true,
+        "IRMAS": false,
+        "FSDnoisy18k": true
+      },
+      "MULTI_CORPUS_TRUE_COUNT": 2,
+      "C2_MULTI_CORPUS_CONFIRMATION": true
+    },
+    "64": {
+      "corpus_degradation": {
+        "Orchset": true,
+        "IRMAS": true,
+        "FSDnoisy18k": true
+      },
+      "MULTI_CORPUS_TRUE_COUNT": 3,
+      "C2_MULTI_CORPUS_CONFIRMATION": true
+    },
+    "80": {
+      "corpus_degradation": {
+        "Orchset": true,
+        "IRMAS": true,
+        "FSDnoisy18k": true
+      },
+      "MULTI_CORPUS_TRUE_COUNT": 3,
+      "C2_MULTI_CORPUS_CONFIRMATION": true
+    },
+    "96": {
+      "corpus_degradation": {
+        "Orchset": true,
+        "IRMAS": false,
+        "FSDnoisy18k": true
+      },
+      "MULTI_CORPUS_TRUE_COUNT": 2,
+      "C2_MULTI_CORPUS_CONFIRMATION": true
+    }
+  },
+  "full_C2_triangulation_events": {
+    "48": false,
+    "64": false,
+    "80": false,
+    "96": false
+  },
+  "C1B_profile_comparison": {
+    "rates": [
+      32,
+      48,
+      64,
+      80,
+      96,
+      128
+    ],
+    "C1B_AAC_recall": [
+      0.9166666666666666,
+      0.15,
+      0.08333333333333333,
+      0.06666666666666667,
+      0.08333333333333333,
+      0.9
+    ],
+    "C2_AAC_recall": [
+      0.6,
+      0.5,
+      0.45,
+      0.45,
+      0.55,
+      0.5666666666666667
+    ],
+    "C1B_per_rate_BA": [
+      0.8833333333333333,
+      0.39444444444444443,
+      0.42777777777777776,
+      0.4444444444444445,
+      0.48888888888888893,
+      0.8000000000000002
+    ],
+    "C2_per_rate_BA": [
+      0.6944444444444445,
+      0.4444444444444445,
+      0.43333333333333335,
+      0.45,
+      0.5277777777777778,
+      0.5222222222222223
+    ],
+    "C2_full_event_status": {
+      "48": false,
+      "64": false,
+      "80": false,
+      "96": false
+    },
+    "C1B_C2_AAC_recall_spearman_rho": 0.8676470588235294,
+    "C1B_C2_AAC_recall_spearman_p_value": 0.025116718400162795
+  },
+  "final_classification": "TRIANGULATION_PROBE_INADEQUATE"
+}

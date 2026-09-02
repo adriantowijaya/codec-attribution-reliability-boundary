@@ -1,0 +1,44 @@
+{
+  "endpoint": {
+    "AAC_RECALL_128": 0.0,
+    "AAC_RECALL_32": 0.0,
+    "BA": 0.39166666666666666,
+    "MFCC_SPEECH_ENDPOINT_PASS": false,
+    "MFCC_SPEECH_ENDPOINT_SEVERE_FAIL": true,
+    "per_codec_recall": {
+      "AAC": 0.0,
+      "MP3": 1.0,
+      "Opus": 0.175
+    }
+  },
+  "events_80_96": {
+    "80": {
+      "AAC_DOMINANT_ERROR_SHARE": 1.0,
+      "AAC_DOMINANT_ERROR_TARGET": "MP3",
+      "AAC_MEDIAN_TRUE_MARGIN": -5.4264163888856505,
+      "AAC_RECALL": 0.0,
+      "AAC_RECALL_DROP": 0.0,
+      "AAC_WRONG_CENTROID_FRACTION": 1.0,
+      "BOOTSTRAP_HIGH": 0.0,
+      "BOOTSTRAP_LOW": 0.0,
+      "BOOTSTRAP_MEDIAN": 0.0,
+      "FULL_MFCC_SPEECH_EVENT": false,
+      "PAIRED_DROP_STABLE": false,
+      "STRUCTURAL_EVENT": false
+    },
+    "96": {
+      "AAC_DOMINANT_ERROR_SHARE": 1.0,
+      "AAC_DOMINANT_ERROR_TARGET": "MP3",
+      "AAC_MEDIAN_TRUE_MARGIN": -5.490136453918527,
+      "AAC_RECALL": 0.0,
+      "AAC_RECALL_DROP": 0.0,
+      "AAC_WRONG_CENTROID_FRACTION": 1.0,
+      "BOOTSTRAP_HIGH": 0.0,
+      "BOOTSTRAP_LOW": 0.0,
+      "BOOTSTRAP_MEDIAN": 0.0,
+      "FULL_MFCC_SPEECH_EVENT": false,
+      "PAIRED_DROP_STABLE": false,
+      "STRUCTURAL_EVENT": false
+    }
+  }
+}

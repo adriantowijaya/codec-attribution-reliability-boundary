@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite it using the metadata below."
+type: software
+title: "Reproducibility Package for Configuration-Conditioned Reliability Boundaries in Blind Audio Codec-Family Attribution"
+version: "0.1.2"
+license: "BSD-3-Clause"
+repository-code: "https://github.com/adriantowijaya/codec-attribution-reliability-boundary"
+authors:
+  - given-names: "Tonny"
+    family-names: "Hidayat"
+    affiliation: "Universitas Amikom Yogyakarta, Faculty of Computer Science, Doctoral Program of Informatics"
+    orcid: "https://orcid.org/0000-0003-3406-0880"
+  - given-names: "Adrianto Mahendra"
+    family-names: "Wijaya"
+    affiliation: "Department of Interactive Media, Faculty of Information and Communication Technology, Universiti Teknikal Malaysia Melaka"
+    orcid: "https://orcid.org/0009-0009-0353-8408"

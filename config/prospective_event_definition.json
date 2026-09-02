@@ -1,0 +1,19 @@
+{
+  "event_thresholds": {
+    "48": {
+      "dominant_error_share": 0.5882352941,
+      "full_event": false,
+      "threshold": 0.6
+    },
+    "80": {
+      "dominant_error_share": 0.75,
+      "full_event": true,
+      "threshold": 0.6
+    },
+    "96": {
+      "dominant_error_share": 0.75,
+      "full_event": true,
+      "threshold": 0.6
+    }
+  }
+}
